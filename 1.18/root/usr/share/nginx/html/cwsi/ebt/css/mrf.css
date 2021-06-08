@@ -1,0 +1,140 @@
+div#tbl-container-MRFExtractResult{
+height: 100px;
+width:  420px;
+overflow: auto;
+}
+
+#tbl-container-MRFExtractResult thead#tblhead th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+width: 770px;
+height: 19px;
+top: expression(document.getElementById("tbl-container-MRFExtractResult").scrollTop-2);
+z-index: 20;
+}
+
+/* display-only 'input' fields and align right*/
+.buttonReadonlyNumeric { width: 125px; BACKGROUND-COLOR: white; TEXT-ALIGN :right ;}
+
+.GLLookUpOutter{
+
+            border-color: black;
+
+            border-style:double;
+
+            border-bottom:0px;
+
+            border-width: 1px;
+
+            background:#7373AD;
+
+            width:230px;
+
+            height:20px;
+
+}
+
+
+
+.GLLookUp{
+
+            background:#FFFFFF;
+
+            border-left:1px double;
+
+            border-right:1px double;
+
+            border-bottom:1px double;
+
+            width:230px;
+
+            height:160px;
+
+            overflow:'auto';
+
+}
+
+
+
+
+
+.GLButtonImg {
+
+            background:#FFD86B;
+
+            cursor:pointer;
+
+            text-align:right;
+
+}
+
+.highlightTableHeadingBlue { 
+color: white; 
+font-weight: bold; 
+background:#333366;
+height:20px;
+
+}
+
+.highlightGrey { background-color: #f0f0f0; }
+
+.highlightWhite { background-color: #ffffff; }
+
+.showtableborder{
+display:block;
+border-right: 1px solid silver;
+border-bottom: 1px solid silver
+}
+
+td.cellborder{
+border: 1px solid;
+border-top-width: 0px;
+border-right-width:0px;
+}
+
+a.blueAnchor{
+font-size:8.0pt;
+line-height:150%;
+color:#333366;
+}
+
+div#tbl-container-hissearch {
+height: 157px;
+width:  750px;
+overflow: auto;
+}
+
+#tbl-container-hissearch thead#tblhead th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+width: 750px;
+top: expression(document.getElementById("tbl-container-hissearch").scrollTop-2);
+z-index: 20;
+}
+
+thead#tblheadhtml th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+z-index: 20;
+white-space: nowrap;
+}
+
+.disabled{
+color: #808080;
+}
+.standard
+{
+font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; 
+}

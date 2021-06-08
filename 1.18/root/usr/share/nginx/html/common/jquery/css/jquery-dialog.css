@@ -1,0 +1,15 @@
+
+.ui-dialog-titlebar {
+BACKGROUND-COLOR: #7373AD;
+color: #ffffff; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-weight:bold;
+font-size: 8pt;
+} 
+
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+	BACKGROUND-COLOR: #7373AD;
+	color: #ffffff;
+	background-image: url('/common/jquery/css/jquery-ui-1.8.8/images/ui-icons_222222_256x240.png');
+	background-position:  -96px -128px; 
+}

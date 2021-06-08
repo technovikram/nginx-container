@@ -1,0 +1,349 @@
+﻿<HTML>
+<HEAD>
+<title>User Administration&#151;Reports</title>
+<!--Modified July 2013 Anne Ramsey-->
+<link href='/common/css/main.css' rel="styleSheet" type="text/css">
+</head>
+
+<BODY>
+<strong>User Administration&#151;Reports</strong>
+<p>
+
+This page allows you to view information pertaining to service requests (adds, changes, and token requests) done by, or for, your institution in the past 90 days.
+<p>
+The Search section allows you to enter information into one or more of the available fields and run various searches to display specific maintenance done in the CWSi User Administration application. When choosing the print link, you will be given the search criteria as well as the results.
+<p>
+Use the buttons and tabs provided in this application for navigation. The Enter key is not a valid option and may give you unexpected results.
+<p>
+Click the following links for more information:
+<p>
+<A HREF="#anchor1a">Search</A>
+<br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor1b">Institution ID</A>
+	<br>
+	<A HREF="#anchor1c">User ID</A>
+	<br>
+	<a href="#anchor1d">User Request Type</a>
+	<br>
+	<a href="#anchor1e">Token Request Type</a>
+	<br>
+	<a href="#anchor1f">Requestor User ID</a>
+	<br>
+	<a href="#anchor1g">Status</a>
+	<br>
+	<a href="#anchor1h">User First Name</a>
+	<br>
+	<a href="#anchor1i">User Last Name</a>
+	<br>
+	<a href="#anchor1j">Request Date From</a>
+	<br>
+	<a href="#anchor1k">Request Date To</a>
+	</div>
+<p>
+
+<A HREF="#anchor2a">Request Report</A>
+<br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor2b">Request ID</A>
+	<br>
+	<A HREF="#anchor2c">User ID</A>
+	<br>
+	<a href="#anchor2d">User Name</a>
+	<br>
+	<a href="#anchor2e">Request Type</a>
+	<br>
+	<a href="#anchor2f">Applications</a>
+	<br>
+	<a href="#anchor2g">Request Date</a>
+	<br>
+	<a href="#anchor2h">Requestor User ID</a>
+	<br>
+	<a href="#anchor2i">Status</a>
+	<br>
+	<a href="#anchor2j">Deliver To</a>
+	</div>
+	<p>
+
+<A HREF="#anchor3a">Buttons</A><br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor3b">Search</A>
+	<br>
+	<A HREF="#anchor3c">Clear</A>
+	</div>
+	<p>
+
+<A HREF="#anchor4a">Link</A><br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor4b">Print</A>
+	</div>
+	<p>
+
+<A NAME="anchor1a"><strong>Search</strong></A>
+<br>
+This section allows you to search for user security record maintenance done within the last 90 days. You can leave the search criteria blank, use a single field, or any combination of the available fields for your search.
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1b">Institution ID</A>
+		</TD>
+		<TD valign="top">
+		Displays the financial institution ID associated with your token ID.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1c">User ID</A>
+		</TD>
+		<TD valign="top">
+		  <p>Allows you to search for a user security record by user ID. </p>
+		  <p><strong>Note</strong>: Partial data cannot be entered but the field can be left blank.
+        </p></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1d">User Request Type</A>
+		</TD>
+		<TD valign="top">
+		Allows you to search for specific service request types.
+		<p>
+		The drop-down list contains the following options:
+		<ul>
+        <li>None</li>
+		<li>Add user</li>
+		<li>Delete user</li>
+		<li>Update user</li></ul>
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1e">Token Request type</A>
+		</TD>
+		<TD valign="top">
+		Allows you to search for a specific kind of token request. The options available in the drop-down list depend on the User Request Type selected.
+		  <p>
+		When User Request Type is set to <strong>None</strong>, the list contains:
+		<ul>
+        <li>None</li>
+		<li>Issue New Hard Token</li>
+		<li>Unassign Hard Token</li>
+		<li>Replace Hard Token</li>
+		<li>Assign Existing Hard Token</li>
+		<li>Issue New Soft Token</li>
+		<li>Remove Soft Token</li>
+		<li>Activate Soft Token</li>
+		<li>Expire Soft Token</li>
+		</ul>
+		<p>
+		When User Request Type is set to <strong>Add User</strong>, the list contains:
+		<ul>
+        <li>None</li>
+		<li>Issue New Hard Token</li>
+		<li>Assign Existing Hard Token</li>
+		<li>Issue New Soft Token</li>
+		</ul>
+		<p>
+		When User Request Type is set to <strong>Delete User</strong>, the list contains:
+		<ul>
+        <li>None</li>
+        <li>Unassign Hard Token</li>
+        <li>Remove Soft Token</li>
+		</ul>
+		<p>
+		When User Request Type is set to <strong>Update User</strong>, the list contains:
+		<ul>
+        <li>Issue New Hard Token</li>
+        <li>Unassign Hard Token</li>
+        <li>Replace Hard Token</li>
+        <li>Assign Existing Hard Token</li>
+        <li>Issue New Soft Token</li>
+        <li>Remove Soft Token</li>
+        <li>Activate Soft Token</li>
+        <li>Expire Soft Token</li>
+		</ul>
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1f">Requestor User ID</A>
+		</TD>
+		<TD valign="top">
+		  <p>Allows you to search for service requests done by a specific administrator. </p>
+		  <p><strong>Note</strong>: Partial data cannot be entered but the field can be left blank.
+        </p></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1g">Status</A>
+		</TD>
+		<TD valign="top">
+		Allows you to search for service requests with a specific status.
+		<p>Options:
+        <ul>
+		<li>None</li>
+		<li>Completed</li>
+		<li>In progress</li></ul>
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1h">User First Name</A>
+		</TD>
+		<TD valign="top">
+		  <p>Allows you to search for maintenance done to a user security record based on the user's first name. </p>
+		  <p><strong>Note</strong>: Partial data cannot be entered but the field can be left blank.
+        </p></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1i">User Last Name</A>
+		</TD>
+		<TD valign="top">
+		  <p>Allows you to search for maintenance done to a user security record based on the user's last name. </p>
+		  <p><strong>Note</strong>: Partial data cannot be entered but the field can be left blank.
+        </p></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1j">Request Date From</A>
+		</TD>
+		<TD valign="top">
+	    <p>Allows you to specify a date range for your search. This field defaults to 90 days prior to the current date but can be changed. </p>
+	    <p><strong>Format:</strong> MM/DD/YYYY </p></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1k">Request Date To</A>
+		</TD>
+		<TD valign="top">
+	    <p>Allows you to specify a date range for your search. This field defaults to the current date but can be changed. </p>
+	    <p><strong>Format:</strong> MM/DD/YYYY </p></TD>
+	</TR>
+</table>
+
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor2a"><strong>Request Report</strong></A>
+<br>
+This section displays a read-only results list in table format based on the search criteria entered. Each row represents a service request.
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2b">Request ID</A>
+		</TD>
+		<TD valign="top">
+		A unique identifier for each add, change, or token request.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2c">User ID</A>
+		</TD>
+		<TD valign="top">
+		User ID being added or changed.
+		</TD>
+	</TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2d">User Name</A>
+		</TD>
+		<TD valign="top">
+		Name associated with the user ID.
+		</TD>
+
+	</TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2e">Request Type</A>
+		</TD>
+		<TD valign="top">
+		Type of action or request, for example, Add User or Issue New Token.
+		</TD>
+	</TR>
+
+		<TD valign="top" width="25%">
+		<A NAME="anchor2f">Applications</A>
+		</TD>
+		<TD valign="top">
+		Displays the Applications and Access Rights access that were added or changed.
+		</TD>
+	</TR>
+
+		<TD valign="top" width="25%">
+		<A NAME="anchor2g">Request Date (ET)</A>
+		</TD>
+		<TD valign="top">
+		Date and time the service request (add user, change user, or token request) was done.
+		</TD>
+	</TR>
+
+		<TD valign="top" width="25%">
+		<A NAME="anchor2h">Requestor ID</A>
+		</TD>
+		<TD valign="top">
+		User ID of the person adding the record or making the change.
+		</TD>
+	</TR>
+
+		<TD valign="top" width="25%">
+		<A NAME="anchor2i">Status</A>
+		</TD>
+		<TD valign="top">
+		Current status of the request. Will show In progress until it is completed.
+		</TD>
+
+	</TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2j">Deliver To</A>
+		</TD>
+		<TD valign="top">
+		Token delivery information, applicable only when a new token is requested.
+		</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor3a"><strong>Buttons</strong></A>
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3b">Search</A>
+		</TD>
+		<TD valign="top">
+		Allows you to search for service request records in User Administration. A results list displays based on the search criteria entered. See the <A HREF="#anchor1a">Search</A> section above for more information about the available search criteria.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3c">Clear</A>
+		</TD>
+		<TD valign="top">
+		Removes all results and search criteria from the page.
+		</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A><P>
+
+<A NAME="anchor4a"><strong>Link</strong></A>
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4b">Print</A>
+		</TD>
+		<TD valign="top">
+		Allows you to print the Search criteria and the contents of the Request Report table.
+		</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A><P>
+
+</BODY>
+</HTML>

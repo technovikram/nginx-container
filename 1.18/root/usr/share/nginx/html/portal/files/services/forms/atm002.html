@@ -1,0 +1,392 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>ATM002</title>
+	<link href="/cwsi/formmanager/css/formmanager.css" rel="stylesheet" type="text/css">
+	<link href="/common/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<script type="text/javascript">
+
+function validateForm()
+		{	
+			showErrorMessageFM(document.getElementById('a1_Name'),"Name is required.");
+			showErrorMessageFM(document.getElementById('a2_Phone'),"Phone is required.");
+			showErrorMessageFM(document.getElementById('a6_Terminal IDs'),"Terminal IDs is required.");
+		}
+
+</script>
+
+<body class="wpsPortalText">
+<div id="print_div">
+<FORM action="" enctype="" >
+<TABLE border="0" cellPadding="0" cellSpacing="8">
+  <tr>
+    <td class="wpsPortalText" valign="bottom">		
+		<p class="wpsPortalText">
+
+			<table class="contact-table" border="0">
+			<tr> 
+				<td colspan="7" class="wpsPortalText"><p class="wpsPortalText"><font color="#ff0000"><b id='RedAlert'></b></font></p></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Institution Information</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Name:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="30" name="a1_Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Phone:</td> 
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="a2_Phone" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Title:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="a3_Title" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Email:</td> 
+				<td class="wpsformBox" width=40%><input  class="wpsformBox" type="Text" size="35" name="a4_Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">ATM Monitoring Contact Form</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Terminal IDs:</td>
+				<td class="wpsformBox" colspan="4"><input  class="wpsformBox" type="Text" size="60" name="a6_Terminal IDs" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>ATM Vendor ID:</td> 
+				<td class="wpsformBox" colspan="4"><input  class="wpsformBox" type="Text" size="20" name="a7_ATM Vendor IDs" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Contact Hours</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Branch Hours:</td>
+				<td class="wpsformBox" colspan="4"><input  class="wpsformBox" type="Text" size="50" name="b1_Branch Hours" value="" class=""> &nbsp; (Days & Hours - Military Time)</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>After Hours:</td>
+				<td class="wpsformBox" colspan="4"><input  class="wpsformBox" type="Text" size="50" name="b2_After Hours" value="" class=""> &nbsp; (Days & Hours - Military Time)</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Contact 1</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Name:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="25" name="c1_Contact1 Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Contact Via:</td> 
+				<td class="wpsformBox">
+					<select class="wpsformBox" name="c2_Contact1 Via">
+						<option value=""></option>
+						<option value="phone">Phone</option>
+						<option value="pager">Pager</option>
+						<option value="email">Email*</option>
+						<option value="voiceMail">Voice Mail</option>
+						<option value="textPager">Text Pager*</option>
+						<option value="textCellPhone">Text Message Cell Phone*</option>
+					</select>	
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Phone Number:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="c3_Contact1 Phone" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Email Address:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="30" name="c4_Contact1 Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Available For:</td>
+				<td class="wpsformBox" colspan="4">
+					<input  class="wpsformBox" type="Checkbox" name="c5_Contact1 Branch Hours" value="Checked"> Branch Hours &nbsp; &nbsp; &nbsp; <input  class="wpsformBox" type="Checkbox" name="c6_Contact1 After Hours" value="Checked"> After Hours
+				</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Contact 2 (optional)</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Name:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="25" name="d1_Contact2 Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Contact Via:</td> 
+				<td class="wpsformBox">
+					<select class="wpsformBox" name="d2_Contact2 Via">
+						<option value=""></option>
+						<option value="phone">Phone</option>
+						<option value="pager">Pager</option>
+						<option value="email">Email*</option>
+						<option value="voiceMail">Voice Mail</option>
+						<option value="textPager">Text Pager*</option>
+						<option value="textCellPhone">Text Message Cell Phone*</option>
+					</select>	
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Phone Number:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="d3_Contact2 Phone" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Email Address:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="30" name="d4_Contact2 Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Available For:</td>
+				<td class="wpsformBox" colspan="4">
+					<input  class="wpsformBox" type="Checkbox" name="d5_Contact2 Branch Hours" value="Checked"> Branch Hours &nbsp; &nbsp; &nbsp; <input  class="wpsformBox" type="Checkbox" name="d6_Contact2 After Hours" value="Checked"> After Hours
+				</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Contact 3 (optional)</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Name:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="25" name="e1_Contact3 Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Contact Via:</td> 
+				<td class="wpsformBox">
+					<select class="wpsformBox" name="e2_Contact3 Via">
+						<option value=""></option>
+						<option value="phone">Phone</option>
+						<option value="pager">Pager</option>
+						<option value="email">Email*</option>
+						<option value="voiceMail">Voice Mail</option>
+						<option value="textPager">Text Pager*</option>
+						<option value="textCellPhone">Text Message Cell Phone*</option>
+					</select>	
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Phone Number:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="e3_Contact3 Phone" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Email Address:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="30" name="e4_Contact3 Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Available For:</td>
+				<td class="wpsformBox" colspan="4">
+					<input  class="wpsformBox" type="Checkbox" name="e5_Contact3 Branch Hours" value="Checked"> Branch Hours &nbsp; &nbsp; &nbsp; <input  class="wpsformBox" type="Checkbox" name="e6_Contact3 After Hours" value="Checked"> After Hours
+				</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Contact 4 (optional)</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Name:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="25" name="f1_Contact4 Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Contact Via:</td> 
+				<td class="wpsformBox">
+					<select class="wpsformBox" name="f2_Contact4 Via">
+						<option value=""></option>
+						<option value="phone">Phone</option>
+						<option value="pager">Pager</option>
+						<option value="email">Email*</option>
+						<option value="voiceMail">Voice Mail</option>
+						<option value="textPager">Text Pager*</option>
+						<option value="textCellPhone">Text Message Cell Phone*</option>
+					</select>	
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Phone Number:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="f3_Contact4 Phone" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Email Address:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="30" name="f4_Contact4 Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Available For:</td>
+				<td class="wpsformBox" colspan="4">
+					<input  class="wpsformBox" type="Checkbox" name="f5_Contact4 Branch Hours" value="Checked"> Branch Hours &nbsp; &nbsp; &nbsp; <input  class="wpsformBox" type="Checkbox" name="f6_Contact4 After Hours" value="Checked"> After Hours
+				</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Telecommunications Contact (required)</span></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsPortalText">
+					This contact will be used by National Support Center to inform you on any telecommunications faults.
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Name:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="25" name="g1_Telecommunications Contact1 Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap><!-- Contact Via: --></td> 
+				<td class="wpsformBox">
+					<!-- <select class="wpsformBox" name="Telecom1_Via">
+						<option value=""></option>
+						<option value="phone">Phone</option>
+						<option value="pager">Pager</option>
+						<option value="email">Email*</option>
+						<option value="voiceMail">Voice Mail</option>
+						<option value="textPager">Text Pager*</option>
+						<option value="textCellPhone">Text Message Cell Phone*</option>
+					</select>	 -->
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Phone Number:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="g2_Telecommunications Contact1 Phone" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Email Address:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="30" name="g3_Telecommunications Contact1 Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Available For:</td>
+				<td class="wpsformBox" colspan="4">
+					<input  class="wpsformBox" type="Checkbox" name="g4_Telecommunications Contact1 Branch Hours" value="Checked"> Branch Hours &nbsp; &nbsp; &nbsp; <input  class="wpsformBox" type="Checkbox" name="g5_Telecommunications Contact1 After Hours" value="Checked"> After Hours
+				</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Telecommunications Contact 2 (optional)</span></td> 
+			</tr>
+			
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Name:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="25" name="h1_Telecommunications Contact2 Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap><!-- Contact Via: --></td> 
+				<td class="wpsformBox">
+					<!-- <select class="wpsformBox" name="Telecom1_Via">
+						<option value=""></option>
+						<option value="phone">Phone</option>
+						<option value="pager">Pager</option>
+						<option value="email">Email*</option>
+						<option value="voiceMail">Voice Mail</option>
+						<option value="textPager">Text Pager*</option>
+						<option value="textCellPhone">Text Message Cell Phone*</option>
+					</select>	 -->
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Phone Number:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="20" name="h2_Telecommunications Contact2 Phone" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Email Address:</td>
+				<td class="wpsformBox"><input  class="wpsformBox" type="Text" size="30" name="h3_Telecommunications Contact2 Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Available For:</td>
+				<td class="wpsformBox" colspan="4">
+					<input  class="wpsformBox" type="Checkbox" name="h4_Telecommunications Contact2 Branch Hours" value="Checked"> Branch Hours &nbsp; &nbsp; &nbsp; <input  class="wpsformBox" type="Checkbox" name="h5_Telecommunications Contact2 After Hours" value="Checked"> After Hours
+				</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsPortalText">
+					*Because Email and all "Text" dispatches "auto-acknowledge", only one Email, Text Pager, or Text Message Cell Phone contact can be selected per Branch/After Hours block. If you wish to accommodate more than one Email contact per Branch/After Hours block, please have your Email or IT Administrator make a Distribution List for your email contacts to use for this purpose.
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Additional Comments</span></td> 
+			</tr>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformBox" colspan="5"><textarea cols="65" name="i1_Additional Comments" rows="5" class=""></textarea></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			</table> 
+		</p>
+		&nbsp;
+	</td>
+</tr>
+
+</table>
+</form>
+</div>
+</body>
+</html>
+
+			
+			
+			
+			
+											
+											
+											

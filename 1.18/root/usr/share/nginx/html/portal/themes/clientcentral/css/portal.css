@@ -1,0 +1,21 @@
+/******************************************************************************/
+/* Styles used in HTML pages                                        */
+/******************************************************************************/
+
+/* FAQ table style */
+.wpsFAQTable {padding: 30%;}
+
+/* FAQ table style */
+.wpsFAQText {color: #000000; background-color: #FFD86B; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+/* FAQ anchor style */
+.wpsFAQAnchor {color: #006633; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold;}
+
+/* FAQ header style */
+.wpsFAQHeader {color: #663333; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold;}
+
+/* Portal text */
+.wpsPortalText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+/* Portal Headers */
+.wpsPortalHeader { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; font-style: italic; }

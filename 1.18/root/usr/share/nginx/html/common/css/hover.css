@@ -1,0 +1,30 @@
+.g {
+	position: absolute;;
+	z-Index: 999;
+}
+
+table.g01 {
+	background-color: #FFFFEF;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+table.g01 td {
+	padding: 2px;
+	border-bottom: 0px solid #000;
+}
+
+table.c01 tr.content td {
+	padding: 0px;
+	border-bottom: 0px solid #000;
+}
+
+.frameclass {
+	position: absolute;
+	z-index: 998;
+	border-style: none;
+	width: 0px;
+	height: 0px;
+}

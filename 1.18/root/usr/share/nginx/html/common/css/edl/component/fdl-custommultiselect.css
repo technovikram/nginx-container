@@ -1,0 +1,105 @@
+.multiselect-container>li.active>a>label{
+color:#fff !important;
+}
+
+.multiselect-container {
+    width: 100%;
+}
+.multiselect-container .checkbox input[type='checkbox'] {
+    opacity: 1;
+    margin-top:1px;
+}
+.multiselect-container li.active label{
+    color:#fff;
+}
+.multiselect-container>li>a>label {
+   
+    padding: 0px 14px 0px 30px;
+}
+.multiselect-selected-text{
+    float: left;
+    font-size:11px;
+    line-height:1.1;
+}
+.multiselect.dropdown-toggle b.caret{
+    float: right;
+    margin-top: 6px;
+}
+.analysis-details-tab .multiselect-container a.multiselect-all label{
+    font-weight:normal;
+}
+.analysis-details-tab .btn-default:active, .analysis-details-tab .btn-default.active, .analysis-details-tab .open > .btn-default.dropdown-toggle,
+.analysis-details-tab .btn-default:hover, .analysis-details-tab .btn-default.active, .analysis-details-tab .open > .btn-default.dropdown-toggle
+.analysis-details-tab .btn-default:focus, .analysis-details-tab .btn-default.active, .analysis-details-tab .open > .btn-default.dropdown-toggle
+{
+    background-color: #fff;
+    box-shadow: none;
+}
+.multiselect-container.dropdown-menu > .active > a, 
+.multiselect-container.dropdown-menu > .active > a:hover, 
+.multiselect-container.dropdown-menu > .active > a:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #69c;
+}
+.multiselect-container.dropdown-menu{top:100%;}
+button.multiselect{
+    padding: 8px 10px;
+}
+.tn-group.open{
+    width: 290px;
+}
+.multiselect-container button.btn{
+    line-height: 1;
+    padding: 6px 10px;
+}
+.multiselect-container .input-group-addon{
+    display: none;
+
+}
+.multiselect-container .btn-default:focus, .multiselect-container .btn-default.focus{
+    background-color: #fff;
+}
+.multiselect-item.filter input[type=text]::-ms-clear { display: none; }
+.btn-group>.btn:first-child{border-color:#9e9e9e;}
+.btn-group .open{height:43px;}
+
+button.multiselect.dropdown-toggle.btn.btn-default:after {
+    color: #66afe9;
+    content: '\e5cf';
+    display: inline-block;
+    width: 16px;
+    height: 16px !important;
+    font-size: 16px;
+    height: 100%;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    text-rendering: optimizeLegibility;
+    top: 6px;
+    background: none;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Material Icons';
+}
+
+
+.multiselect-container>li>a:focus, .multiselect-container>li>a:hover {
+    background-color: #337ab7;
+}
+.multiselect-container>li>a:focus label, .multiselect-container>li>a:hover label {
+    color:#fff;
+}
+
+.multiselect .caret{display:none;}
+.multiselect-container>li>a>label {
+    color: #212121;
+}
+
+.multiselect.btn-default.active.focus, .multiselect.btn-default.active:focus, .multiselect.btn-default.active:hover, .multiselect.btn-default:active.focus, .multiselect.btn-default:active:focus, .multiselect.btn-default:active:hover, .open>.multiselect.btn-default.dropdown-toggle.focus, .open>.multiselect.btn-default.dropdown-toggle:focus, .open>.multiselect.btn-default.dropdown-toggle:hover,.multiselect.btn-default:hover,.btn-group.open .multiselect.dropdown-toggle{background-color: #fff; box-shadow: none;border-color:#66afe9;webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);}
+
+.multiselect-container.dropdown-menu{margin-right:0;}
+.multiselect-container{border-color: #337ab7;}

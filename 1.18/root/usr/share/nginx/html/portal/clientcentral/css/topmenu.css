@@ -1,0 +1,265 @@
+
+/* Menu Stylesheet */
+
+a.menuitemselected:visited {
+color: #000066;
+
+}
+
+a.menuitem:visited {
+color: #ffffff;
+}
+
+
+.menuitemselected {
+display: block;
+padding-left:1px;
+padding-right:7px;
+width: 100%;
+height:23px;
+background: #FFDB6B;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+font-weight: bold;
+color: #000066;
+text-align:center;
+padding-top:5px;
+padding-left:5px;
+padding-right:5px;
+text-decoration: none;
+background-image:url(../images/NewCornerSelected.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+
+.banner {
+
+background-color: #5EAEEB;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+color: #9C93CC;
+background-repeat:
+no-repeat;
+
+}
+
+.footerbar {
+background-color: #6699CC;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 7pt;
+font-weight: bold;
+color: #FFFFFF;
+}
+
+a.menuitemend:visited {
+color:  #333366;
+}
+
+.menuitem {
+display: block;
+padding-left:1px;
+padding-right:7px;
+margin: 0px 0px;
+width: 100%;
+height:23px;
+background: #313063;
+border-left:1px solid;
+border-right:0px solid;
+border-top:1px solid;
+border-left-color:#63659c;
+border-right-color:#000031;
+border-top-color:#639ACE;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color: #FFFFFF;
+text-align:center;
+padding-top:5px;
+padding-left:5px;
+padding-right:5px;
+text-decoration: none;
+background-image:url(../images/NewCorner.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+
+.menuitemnew {
+margin: 0px 0px;
+padding-bottom:2px;
+padding-top:2px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+text-align:left;
+width: 165;
+color:#313063;
+text-decoration: none;
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+
+
+.menuitemnewselected {
+margin: 0px 0px;
+width: 165;
+padding-top:2px;
+padding-bottom:2px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+text-align:left;
+background: #333366;
+color: #FFFFFF;
+text-decoration: none;
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+.menuitemnewselectedurl
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menuitemnewurl
+{
+	color:#313063;
+	text-decoration: none;
+}
+
+.menuitemend {
+display: block;
+padding-left:5px;
+padding-right:7px;
+margin: 0px 0px;
+width: 165;
+background: #cccccc;
+border-left: 1px #eeeeee solid;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+text-align:center;
+text-decoration: none;
+color: #333366;
+background-image:url(../images/USPC2.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+a.menuitem:hover {
+color: #FFFFFF;
+
+text-decoration: none;
+
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+a.menuitemend:hover {
+color: #FFFFFF;
+background: #333366;
+text-decoration: none;
+
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+a.submenuitem:visited {
+color: #333366;
+
+}
+
+.arrowimage {
+border=0;
+
+}
+
+.submenuitem {
+display: block;
+padding-left:5px;
+padding-right:0px;
+padding-top:2px;
+padding-bottom:2px;
+margin: 0px 0px;
+width: 165px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+text-align:left;
+text-decoration: none;
+color: #333366;
+}
+
+.submenuitemurl {
+
+text-decoration: none;
+color: #333366;
+}
+
+.submenuiteselectedmurl {
+
+text-decoration: none;
+color: #FFFFFF;
+}
+
+a.submenuitem:hover {
+
+}
+
+
+
+a.submenuitemselected:visited {
+color: #FFFFFF;
+}
+
+a.submenuitemselected:hover {
+color: #FFFFFF;
+}
+
+td.submenuitem {
+background: #333366;
+}
+
+td.submenuitemselected {
+background: #FFFFFF;
+}
+
+.submenuitemselected {
+display: block;
+padding-left:5px;
+padding-right:0px;
+padding-top:2px;
+padding-bottom:2px;
+margin: 0px 0px;
+width: 165px;
+background: #333366;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+text-align:left;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.topbartext{
+
+color:#FFFFFF;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 7pt;
+font-weight: bold;
+text-decoration: none;
+padding-left:2;
+padding-right:2;
+
+}
+
+.footertext{
+
+color:#FFFFFF;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+text-decoration: none;
+padding-left:5;
+padding-right:5;
+
+}

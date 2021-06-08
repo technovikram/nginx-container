@@ -1,0 +1,521 @@
+/******************************************************************************/
+/* General styles                                                             */
+/******************************************************************************/
+
+a, table, tr, td, select, input, form, li, p, textarea { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+a { color: #3366CC; }
+
+a:visited { color: #6666FF; }
+
+a:hover { color: #6699CC; }
+
+body { font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #FFFFFF; font-size: 8pt; margin: 0; }
+
+ul { font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+.banner { background-color: #5EAEEB; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #9C93CC; background-repeat: no-repeat; }
+
+
+/******************************************************************************/
+/* Menu styles                                                                */
+/******************************************************************************/
+
+a.menuitemselected:visited {
+color: #FFFFFF;
+}
+
+.menuitemselected {
+display: block;
+padding-left:5px;
+padding-right:7px;
+/*width: 100%;*/
+background: #333366;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+font-weight: bold;
+color: #FFFFFF;
+text-align:center;
+text-decoration: none;
+background-image:url(../images/USPC2.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+
+a.menuitemselected:hover {
+color: #FFFFFF;
+background: #333366;
+text-decoration: none;
+background-image:url(../images/USPC2.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+a.menuitem:visited {
+color: #333366;
+}
+
+a.menuitemend:visited {
+color:  #333366;
+}
+
+.menuitem {
+display: block;
+padding-left:5px;
+padding-right:7px;
+margin: 0px 0px;
+/*width: 100%; */
+background: #cccccc;
+border-left: 1px #eeeeee solid;
+border-right: 1px #999999 solid;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color: #333366;
+text-align:center;
+text-decoration: none;
+background-image:url(../images/USPC2.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+.menuitemend {
+display: block;
+padding-left:5px;
+padding-right:7px;
+margin: 0px 0px;
+/*width: 100%; */
+background: #cccccc;
+border-left: 1px #eeeeee solid;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+text-align:center;
+text-decoration: none;
+color: #333366;
+background-image:url(../images/USPC2.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+a.menuitem:hover {
+color: #FFFFFF;
+background: #333366;
+text-decoration: none;
+background-image:url(../images/USPC2.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+a.menuitemend:hover {
+color: #FFFFFF;
+background: #333366;
+text-decoration: none;
+background-image:url(../images/USPC2.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+a.submenuitem:visited {
+color: #ffffff;
+}
+
+.submenuitem {
+/*display: block;*/
+padding-left:7px;
+padding-right:7px;
+padding-top:2px;
+padding-bottom:2px;
+margin: 0px 0px;
+/*width: 100%;*/
+background: #333366;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+text-align:center;
+text-decoration: none;
+color: #ffffff;
+height: 13px;
+}
+a.submenuitem:hover {
+color: #FFD86B;
+}
+
+
+
+a.submenuitemselected:visited {
+color: #FFD86B;
+}
+
+a.submenuitemselected:hover {
+color: #FFD86B;
+}
+
+td.submenuitem {
+background: #333366;
+}
+
+td.submenuitemselected {
+background: #333366;
+}
+
+.submenuitemselected {
+display: block;
+padding-left:7px;
+padding-right:7px;
+padding-top:2px;
+padding-bottom:2px;
+margin: 0px 0px;
+/*width: 100%;*/
+background: #333366;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+font-weight: bold;
+text-align:center;
+text-decoration: none;
+color: #FFD86B;
+}
+
+
+/******************************************************************************/
+/* Message styles                                                             */
+/******************************************************************************/
+.errormessagetitle
+{
+padding-left:7px;
+font-weight:bold;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#ff0000
+}
+
+
+.errormessage
+{
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#ff0000
+}
+
+/* duplicated because errormessage class conflicts with struts2 class styles  */
+.cwsierrormessage
+{
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#ff0000
+}
+
+.informationalmessage
+{
+font-weight:bold;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#228B22
+}
+
+
+/******************************************************************************/
+/* Misc styles                                                                */
+/******************************************************************************/
+
+/* title text style */
+.titleline { background-color: #7373AD; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; padding-bottom: 0.2em;}
+
+/* Highlight Key Information row */
+.highlightKeyInfoRowTan { background-color: #ffe8ba; padding-top:2px;padding-bottom:2px;padding-left:2px;padding-right:2px; }
+
+/* button width styles */
+.buttonSmall { width: 40px; }
+.buttonMedium { width: 75px; }
+.buttonLarge { width: 125px; }
+.buttonExtraLarge { width: 150px; }
+
+/* Styles used in application portlets                                        */
+/* text labels for field groups in portlet body */
+.appGroupText {color: #333366; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; }
+
+/* text labels for field groups in portlet body */
+.printPageLabelText { }
+.printPageValueText {font-weight: bold; }
+/* print page display - align right */
+.printPageValueNumeric {font-weight: bold; text-align:right}
+.printPageColHdrLabelText {font-style: italic }
+
+/* display-only 'input' fields */
+.appInputReadonly { background-color: #eeeeee ; text-align:center;border-bottom-width: 0px; border-right-width: 0px;}
+
+/* display-only 'input' fields - align center */
+.appInputReadonlyCenter { background-color: #eeeeee ; text-align:center;border-bottom-width: 0px; border-right-width: 0px;}
+
+/* display-only 'input' fields - align left */
+.appInputReadonlyLeft { background-color: #eeeeee ; text-align:left;border-bottom-width: 0px; border-right-width: 0px;}
+
+/* Highlight table row */
+.appHighlightRow { background-color: #ffffcc }
+
+/* display-only 'input' fields and align right*/
+.appNumericReadonly {
+	BACKGROUND-COLOR: #eeeeee;TEXT-ALIGN :right;border-bottom-width: 0px; border-right-width: 0px;
+}
+
+/* Editable numeric 'input' fields and align right*/
+.appNumericInput {
+	TEXT-ALIGN :right;
+}
+
+/* display-only 'input' fields and align right*/
+.appTextReadonly {
+	BACKGROUND-COLOR: #eeeeee;TEXT-ALIGN :center;border-bottom-width: 0px; border-right-width: 0px;
+}
+
+/* Editable numeric 'input' fields and align right*/
+.appTextInput {
+	TEXT-ALIGN :left;center;
+}
+
+/* Link appearance for submit button */
+.submitLink {
+   color: #00f;
+   background-color: transparent;
+   text-decoration: underline;
+   border: none;
+   cursor: pointer;
+   cursor: hand;
+}
+
+
+td.titlebar {
+/*display: block;*/
+width: 100%;
+BACKGROUND-COLOR: #7373AD;
+color: #ffffff;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size: 8pt;
+}
+
+td.titlebarImage {
+display: block;
+width: 100%;
+BACKGROUND-COLOR: #7373AD;
+color: #ffffff;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight:bold;
+background-image:url(../images/Corner.gif);
+background-position:top right;
+background-repeat:no-repeat;
+}
+
+
+td.heading
+{
+background-image:url(../images/dotgrey1x1.gif);
+background-position:50% 50%;
+background-repeat:repeat-x;
+}
+
+.heading
+{
+padding-left:5px;
+padding-right:5px;
+color: #333366;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 8pt;
+font-weight: bold;
+background: #ffffff;
+}
+
+.userMessage
+{
+padding-left:5px;
+padding-right:5px;
+color: black;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+background: #ffffff;
+}
+
+
+/* next two Styles used for highlighting a selected row not highlighting an unselected row           */
+tr.rowhover { color: ivory;
+            cursor: hand;
+            cursor: pointer;
+            background: steelblue;
+          }
+
+tr.normal { color: black;
+              cursor: hand;
+              cursor: pointer;
+              background: white;
+            }
+tr.rowhover a:visited{ color: ivory;}
+tr.rowhover a:link{ color: ivory;}
+
+
+.required { background-image:url(/common/images/required star 128.gif); background-position:top right; background-repeat:no-repeat; }
+.partial { background-position:top right; background-repeat:no-repeat; }
+
+.fixedwidthfont {font-family: Courier New}
+
+/* Highlight table row */
+.highlightTableRowBlue { background-color: #e7f0ff; }
+
+.highlightTableRowAqua { color: ivory; background: steelblue; }
+
+.highlightTableRowAquaBold { color: ivory; font-weight: bold; background: steelblue; }
+
+/* Super Tall height.  Set the height of this div as per Call Me needs, once all apps start using the scrollable table tag
+we might have to do some re-work on the Call Me JSP */
+div#tbl-container {
+height: 300px;
+overflow: auto;
+}
+
+/* Tall height */
+div#tbl-container-tall {
+height: 275px;
+overflow: auto;
+}
+
+/* Medium height */
+div#tbl-container-medium {
+height: 200px;
+overflow: auto;
+}
+
+/* Short height */
+div#tbl-container-short {
+height: 100px;
+overflow: auto;
+}
+
+/* No height */
+div#tbl-container-auto {
+overflow: auto;
+}
+
+thead#tblautohead th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-auto").scrollTop-2);
+z-index: 20;
+white-space: nowrap;
+}
+
+thead#tblhead th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container").scrollTop-2);
+z-index: 20;
+white-space: nowrap;
+}
+
+thead#tblheadtall th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-tall").scrollTop-2);
+z-index: 20;
+white-space: nowrap;
+}
+
+thead#tblheadmedium th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-medium").scrollTop-2);
+z-index: 20;
+white-space: nowrap;
+}
+
+thead#tblheadshort th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-short").scrollTop-2);
+z-index: 20;
+white-space: nowrap;
+}
+
+thead#tblheadlikescrltbl th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+z-index: 20;
+white-space: nowrap;
+}
+
+
+tbody#offTblBdy td {
+padding: 2px 5px 2px 2px;
+border-left: 1px solid silver;
+border-bottom: 1px solid silver;
+text-align: left;
+white-space: nowrap;
+}
+
+.yellowBackground {background-color: #FFD86B;}
+
+.tbl-cursor-hand{
+cursor:hand;
+}
+
+.td-nowrap{
+	white-space: nowrap;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+table.noBorder {
+	border: none;
+}
+
+table.noBorder100 {
+	width: 100%;
+	border: none;
+}
+
+.help{
+	color: #ffff33;
+	font-weight: bold;
+	text-underline-position: under; 
+	padding-left: 15em;
+}
+a.help:hover{
+	color: #ffff33 !important;
+}
+a.help:visited{
+	color: #ffff33 !important;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+select:focus{
+	outline:0;
+}
+
+input[type=checkbox][disabled]{
+  opacity: 0.4 !important;
+}

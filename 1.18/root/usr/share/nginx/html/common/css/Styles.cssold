@@ -1,0 +1,332 @@
+/******************************************************************************/
+/*                                                                            */
+/* Licensed Materials - Property of IBM, 5724-B88, (C) Copyright IBM Corp. 2001, 2003 - All Rights reserved.                                                          */
+/*                                                                            */
+/* Theme: Default                                                             */
+/*                                                                            */
+/* This file is designed for use with Internet Explorer.                                                                 */
+/*                                                                  */
+/*                                                                  */
+/* This CSS file was programatically generated using the configuration information from CssStyles_LatinI.properties.                                                                 */
+/*                                                                  */
+/*                                                                            */
+/******************************************************************************/
+
+/******************************************************************************/
+/* General styles                                                             */
+/******************************************************************************/
+
+a, table, tr, td, select, input, form, li, p, textarea { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+a { color: #3366CC; }
+
+a:visited { color: #6666FF; }
+
+a:hover { color: #6699CC; }
+
+body { font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #FFFFFF; font-size: 8pt; margin: 0; }
+
+ul { font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+/******************************************************************************/
+/* Styles used in the header or other common sections of the page             */
+/******************************************************************************/
+
+/* TOOL BAR */
+
+/* bar under border containing the page group dropdown and login, etc. buttons */
+/*.wpsToolBar { background-color: #9C93CC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #e1def0; }*/
+/*.wpsToolBar { background-color: #003366; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #FFFFFF; }*/
+.wpsToolBar { background-color: #6699CC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-weight: bold; color: #FFFFFF; }
+
+/* Link color for the text which can be found on the toolbar */
+/*.wpsToolBarLink, .wpsToolBarLink:visited, .wpsToolBarLink:hover   { color:#e1def0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; text-decoration: none; }*/
+.wpsToolBarLink, .wpsToolBarLink:visited, .wpsToolBarLink:hover   { color:#FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-weight: bold; text-decoration: none; }
+
+/* vertical separator between toolbar and place bar */
+.wpsToolBarSeparator { background-color: #5C5E97; }
+
+
+/* PLACE BAR */
+
+/* Bar under toolbar that shows the places */
+/*.wpsPlaceBar { background-color: #2B244E; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #9C93CC; background-repeat: no-repeat; }*/
+.wpsPlaceBar { background-color: #6699CC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #9C93CC; background-repeat: no-repeat; }
+
+
+.wpsBanner { background-color: #5EAEEB; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #9C93CC; background-repeat: no-repeat; }
+
+/* Link color for the text which can be found on the place bar outside of tabs */
+.wpsPlaceBarLink, .wpsPlaceBarLink:visited, .wpsPlaceBarLink:hover   { color:#9C93CC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; }
+
+/* 3D highlight for Place bar */
+/* .wpsPlaceBar3dHighlight { background-color: #B6B7D3; } */
+.wpsPlaceBar3dHighlight { background-color: #FFF5CE; }
+
+/* 3D shadow for Place bar */
+/* .wpsPlaceBar3dShadow { background-color: #5D5E96; } */
+.wpsPlaceBar3dShadow { background-color: #906A00; }
+
+/* Selected tab on Place bar */
+/*.wpsSelectedPlace, .wpsSelectedPlace:visited, .wpsSelectedPlace:hover, .wpsSelectedPlace:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #FFFFFF; background-color: #9C93CC; text-decoration: none; }*/
+.wpsSelectedPlace, .wpsSelectedPlace:visited, .wpsSelectedPlace:hover, .wpsSelectedPlace:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #333366; background-color: #FFD86B; font-weight: bold; text-decoration: none; }
+
+/* 3D highlight on selected tab on Place bar */
+/* .wpsSelectedPlace3dHighlight { background-color: #B6B7D3; } */
+.wpsSelectedPlace3dHighlight { background-color: #FFF5CE; }
+
+/* 3D shadow on selected tab on Place bar */
+/* .wpsSelectedPlace3dShadow { background-color: #5D5E96; } */
+.wpsSelectedPlace3dShadow { background-color: #906A00; }
+
+/* Unselected tabs on Place bar */
+/*.wpsUnSelectedPlace, .wpsUnSelectedPlace:visited, .wpsUnSelectedPlace:hover, .wpsUnSelectedPlace:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #CCCCCC; background-color: #333366; text-decoration: none; }*/
+.wpsUnSelectedPlace, .wpsUnSelectedPlace:visited, .wpsUnSelectedPlace:hover, .wpsUnSelectedPlace:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #FFFFFF; background-color: #333366; text-decoration: none; }
+
+/* 3D highlight on unselected tabs on Place bar */
+.wpsUnSelectedPlace3dHighlight { background-color: #666699; }
+
+/* 3D shadow on unselected tabs on Place bar */
+.wpsUnSelectedPlace3dShadow { background-color: #000033; }
+
+
+/* PAGE BAR */
+
+/* Bar under place bar that shows the pages */
+.wpsPageBar { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+/* Link color for the text which can be found on the page bar outside of tabs */
+.wpsPageBarLink, .wpsPageBarLink:visited, .wpsPageBarLink:hover   { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; }
+
+/* 3D highlight for Page bar */
+.wpsPageBar3dHighlight { background-color: #FD8C3E; }
+
+/* 3D shadow for Page bar */
+.wpsPageBar3dShadow { background-color: #B74405; }
+
+/* Selected tab on Page bar */
+.wpsSelectedPage, .wpsSelectedPage:visited, .wpsSelectedPage:hover, .wpsSelectedPage:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #FFFFFF; background-color: #FC6700; text-decoration: none; } 
+
+/* 3D highlight on selected tab on Page bar */
+.wpsSelectedPage3dHighlight { background-color: #FD8C3E; }
+
+/* 3D shadow on selected tab on Page bar */
+.wpsSelectedPage3dShadow { background-color: #B74405; }
+
+/* Unselected tabs on Page bar */
+.wpsUnSelectedPage, .wpsUnSelectedPage:visited, .wpsUnSelectedPage:hover, .wpsUnSelectedPage:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #F8C860; background-color: #FC6700; text-decoration: none; }
+
+/* 3D highlight on unselected tabs on Page bar */
+.wpsUnSelectedPage3dHighlight { background-color: #FD8C3E; }
+
+/* 3D shadow on unselected tabs on Page bar */
+.wpsUnSelectedPage3dShadow { background-color: #B74405; }
+
+
+
+/* TREE NAVIGATION */
+/* .wpsNavSelectedNode, .wpsNavSelectedNode:visited, .wpsNavSelectedNode:hover, .wpsNavSelectedNode:active                 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; background-color: #ffffff; text-decoration: none; } */
+/* .wpsNavUnSelectedNode, .wpsNavUnSelectedNode:visited, .wpsNavUnSelectedNode:hover, .wpsNavUnSelectedNode:active         { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; background-color: #EFEFEF; text-decoration: none; } */
+/* .wpsNavUnSelectableNode, .wpsNavUnSelectableNode:visited, .wpsNavUnSelectableNode:hover, .wpsNavUnSelectableNode:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #aaaaaa; background-color: #EFEFEF; text-decoration: none; } */
+
+.wpsNavSelectedNode, .wpsNavSelectedNode:visited, .wpsNavSelectedNode:hover, .wpsNavSelectedNode:active                 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #FFFFFF; background-color: #333366; text-decoration: none; }
+.wpsNavUnSelectedNode, .wpsNavUnSelectedNode:visited, .wpsNavUnSelectedNode:hover, .wpsNavUnSelectedNode:active         { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #333366; background-color: #cccccc; text-decoration: none; }
+.wpsNavUnSelectableNode, .wpsNavUnSelectableNode:visited, .wpsNavUnSelectableNode:hover, .wpsNavUnSelectableNode:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #333366; background-color: #cccccc; text-decoration: none; }
+.wpsNavLevel1 { font-weight: bold; }
+
+
+/* horizontal separator between pages on tree */
+.wpsNavbarSeparator { background-color: #2C2932; }
+
+
+/* portlet title text style */
+.wpsPortletTitle { background-color: #7373AD; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+/******************************************************************************/
+/* Special styles for administration                                          */
+/******************************************************************************/
+
+/* enroll screen background */
+.wpsEnrollBack  { background-color: #FFFFCC; }
+
+/* admin portlets: header bar and task manager selected tab*/
+.wpsTableAdminHead {color: #000000; background-color: #CCCCCC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+/* admin portlets: task manager unselected tabs */
+.wpsTaskManagerUnselected {color: #000000; background-color: #999999; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+/* admin portlets: color for separator lines - matches icon background */
+.wpsAdminHeadSeparator { background-color: #999999; }
+
+/* admin portlets: text for tasks on header bar */
+.wpsTaskIconText {color: #333333; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; }
+
+/* text labels for icons in portlet body */
+.wpsDialogIconText {color: #666666; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-weight: bold; }
+
+/* text labels for disabled icons in portlet body */
+.wpsDialogDisabledIconText {color: #CFC5C5; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-weight: bold; }
+
+/******************************************************************************/
+/* Styles used in portlets                                                    */
+/******************************************************************************/
+
+/* standard portlet background */
+.wpsPortletBack { background-color: #FFFFFF; }
+
+/* edit and configure mode backgrounds */
+.wpsEditBack, .wpsConfigureBack { background-color: #FFFFFF; }
+
+/* portlet background with emphasis color */
+.wpsPortletColorBack { background-color: #CCCCCC; }
+
+/* portlet header text */
+.wpsPortletHead { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: black; }
+
+/* portlet header text for edit mode */
+.wpsEditHead { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; }
+
+/* default text in portlet body and in edit mode */
+.wpsPortletText, .wpsEditText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+/* Smaller text than default */
+.wpsPortletSmText, .wpsEditSmText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; }
+
+/* Smallest text */
+.wpsPortletTinyText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; }
+
+/* Main portlet body style */
+.wpsPortletBody {  }
+
+/* form entryfields */
+.wpsEditField { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+/* form buttons */
+.wpsButtonText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: black; }
+
+/* table header row */
+.wpsTableHead {color: #FFFFFF; background-color: #999999; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold;}
+
+/* primary table style */
+.wpsTableText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; align: center; }
+
+/* normal table row */
+.wpsTableRow, .wpsTableNrmRow   {color: #000000; background-color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;  }
+
+/* shaded table row - used to alternate row colors with normal row */
+.wpsTableShdRow {color: #000000; background-color: #ECECEC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;  }
+
+/* Font settings used for text links in the header row of a table */
+.wpsTableHeadLink, .wpsTableHeadLink:visited, .wpsTableHeadLink:hover {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; }
+
+/* text for form element labels */
+.wpsLabelText  {color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+/* text for form element descriptions */
+.wpsDescriptionText {color: #999999; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; }
+
+/* error text */
+.wpsFieldErrorText { color: #C83030; }
+
+/* warning text */
+.wpsFieldWarningText { color: #000000; }
+
+/* success text */
+.wpsFieldSuccessText { color: #000000; }
+
+/* information */
+.wpsFieldInfoText { color: #999999; }
+
+/* inline help information */
+.wpsInlineHelpText { color: #666666; }
+
+/******************************************************************************/
+/* Lotus Notes Portlet classes                                                */
+/******************************************************************************/
+
+/* Background color and font settings for table cell that holds a weekday abbreviation (i.e. Fri) 
+in the Lotus Notes Calendar Portlet */
+.weekday_header {	background-color: #999999; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000000;}
+
+/* Background color and font settings for table cell that holds a day number (i.e 17) for months 
+other than the current month in the Lotus Notes Calendar Portlet */
+.other_month_header { background-color: #E4E3E3; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; height: 20; color: #7E7001;}
+
+/* Background color and font settings for table cell that holds a day number (i.e 17) for the current month 
+in the Lotus Notes Calendar Portlet */
+.current_month_header { background-color: #CBDBF3; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; height: 20; color: #000000;}
+
+/* Background color and font settings for empty table cells for months other than the current month 
+in the Lotus Notes Calendar Portlet */
+.other_month_cell { background-color: #F0F0F0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+/* Background color and font settings for empty table cells for the current month in the Lotus Notes Calendar Portlet */
+.current_month_cell { background-color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: Black;}
+
+/* Background color and font settings for table cell that holds the current day number and name (i.e 17 Wednesday)
+in the Lotus Notes Calendar Portlet */
+.current_day_header { background-color: #92B5E6; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; height: 20; color: #000000;}
+
+/* Background color and font settings for the current day number and name (i.e 17 Wednesday) text in the Lotus Notes Calendar Portlet */
+a.current_day_header:link 	{ color: #000000; background-color:transparent; }
+
+/* Background color and font settings for a day number (i.e 17) in a month other than the current month 
+in the Lotus Notes Calendar Portlet */
+a.other_month_header:link 	{ color: #0000ff; background-color:transparent; }
+
+/* Background color and font settings for a day number (i.e 17) in the current month in the Lotus Notes Calendar Portlet */
+a.current_month_header:link { color: #0050C9; background-color:transparent; }
+
+/* Text displaying the place name */
+.wpsPlaceName { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold; color: #EBEBEB; }
+
+/* End of Lotus Notes Calendar Portlet classes */
+
+/******************************************************************************/
+/* Styles used in application portlets                                        */
+/******************************************************************************/
+
+/* text labels for field groups in portlet body */
+.wpsAppGroupText {color: #333366; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; }
+
+/* unselected tabs on navbar */
+.wpsAppTabs, .wpsAppTabs:visited, .wpsAppTabs:hover, .wpsAppTabs:active    { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #333366; text-decoration: none; background-color: #cccccc; }
+
+/* selected tab on navbar */
+.wpsAppSelectedTab, .wpsAppSelectedTab:visited, .wpsAppSelectedTab:hover, .wpsAppSelectedTab:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #FFFFFF; background-color: #333366; text-decoration: none; }
+
+/* text for error messages */
+.wpsAppErrorText {color: #800000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; }
+
+/* text for error messages */
+.wpsAppInfoText {color: #800000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-style: italic; }
+
+/* display-only 'input' fields */
+.wpsAppInputReadonly { background-color: #eeeeee }
+
+/* Highlight table row */
+.wpsAppHighlightRow { background-color: #ffffcc }
+
+/******************************************************************************/
+/* Styles used in HTML pages                                        */
+/******************************************************************************/
+
+/* FAQ table style */
+.wpsFAQTable {padding: 30%;}
+
+/* FAQ table style */
+.wpsFAQText {color: #000000; background-color: #FFD86B; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+/* FAQ anchor style */
+.wpsFAQAnchor {color: #006633; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold;}
+
+/* FAQ header style */
+.wpsFAQHeader {color: #663333; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold;}
+
+/* Portal text */
+.wpsPortalText { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; }
+
+/* Portal Headers */
+.wpsPortalHeader { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; font-style: italic; }
+
+

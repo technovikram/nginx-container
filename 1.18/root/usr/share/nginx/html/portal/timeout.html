@@ -1,0 +1,92 @@
+﻿<HTML>
+<HEAD>
+<style>
+<!--
+
+a, table, tr, td, select, input, form, li, p, textarea { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; }
+
+td.titlebar {
+display: block;
+width: 100%;
+BACKGROUND-COLOR: #7373AD;
+color: #ffffff;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size: 8pt;
+}
+
+-->
+</style>
+<script>
+<!--
+function getQueryVariable(variable) {
+  var query = unescape(window.location.search.substring(1));
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if (pair[0] == variable) {
+	data = pair[1];
+ 	//data = data.replace(/[\"\'][\s]*javascript:(.*)[\"\']/gi, "\"\"");
+	//data = data.replace(/script(.*)/gi, "");
+ 	//data = data.replace(/eval\((.*)\)/gi, "");
+	data = data.replace(/[^A-Za-z0-9 ]/gi,'');
+      return data;
+    }
+  }
+  return "The Application";
+}
+
+-->
+</script>
+
+
+<TITLE>Application Timed Out</TITLE>
+</HEAD>
+
+<BODY>
+<table border="0" align=center width="99%" cellpadding="0" cellspacing="0" >
+	<tr>
+		<td width="1" colspan="4"></td>
+	</tr>
+	<tr>
+	<td bgcolor="#2B2F53" width="1" rowspan="3" height=1></td>
+	<td bgcolor="#2B2F53" height="1" colspan="2"></td>
+	<td bgcolor="#2B2F53" width="4" rowspan="3" colspan="2" valign="top" align="right"></td>
+	</tr>
+
+<tr>
+	<td colspan=2 width="100%" class="titlebar" nowrap align="left" valign="middle">&nbsp;Application Timed Out&nbsp;</td>
+
+</tr>
+</td>
+	</tr>
+	<tr>
+		<td bgcolor="#000000" colspan="2" height="1"></td>
+</tr>
+<tr>
+	<td bgcolor="#CECECE" width="1" ></td>
+		<td valign="top" colspan="3" >
+			<table width="100%"  border="0" cellpadding="5" cellspacing="0">
+				<tr>
+					<td dir="ltr" valign="top">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td><BR><b>
+						<script>document.write(getQueryVariable("appName"));</script> has been inactive for 15 minutes.  As a result <script> document.write(getQueryVariable("appName"));</script> has been terminated.  <BR><BR>To reactivate, please close this window and access the <script> document.write(getQueryVariable("appName"));</script> application again.</b>
+						<BR><BR><BR><CENTER><input type=button value="Close Window" onclick="window.close()"></CENTER>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td align="right" bgcolor="#CECECE" width="1"></td>
+	</tr>
+	<tr>
+	<td colspan="5" bgcolor="#CECECE" height="1"></td>
+	</tr>
+</table>
+
+</BODY>
+</HTML>

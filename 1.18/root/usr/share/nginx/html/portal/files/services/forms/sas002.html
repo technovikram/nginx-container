@@ -1,0 +1,186 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>SAS002</title>
+	<link href="/cwsi/formmanager/css/formmanager.css" rel="stylesheet" type="text/css">
+	<link href="/common/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<script>
+	function validateForm()
+		{	
+			showErrorMessageFM(document.getElementById('a1_Name'),"Name is required.");
+			showErrorMessageFM(document.getElementById('a2_Phone'),"Phone is required.");
+			showErrorMessageFM(document.getElementById('a3_Title'),"Title is required.");
+			showErrorMessageFM(document.getElementById('a4_Email'),"Email is required.");
+			showErrorMessageFM(document.getElementById('b1_Number of SAS Requested'),"Number of SAS70 is required.");
+			showErrorMessageFM(document.getElementById('b2_FIID'),"FIID is required.");
+
+			showErrorMessageForDropDownFM(document.getElementById('b3_Indicate format'),"","Please select a Format.");
+
+				if(!(document.getElementById('ID1_Some_test').checked ||					    document.getElementById('ID2_Some_test').checked )) {	
+
+									 addErrorMessage("Yes/No is required.");
+							}
+			
+			if(document.getElementById('b8_Some Body Ask To Place Order').checked){
+				showErrorMessageFM(document.getElementById('b9_Who'),"Who is required.");
+			}
+
+			if(!(document.getElementById('c1_Acknowledge The Charge').checked)) {
+				
+				 addErrorMessage("Please acknowledge the SAS 70 charge.");
+				
+				}
+					
+		}
+
+</script>
+
+
+<body class="wpsPortalText">
+<div id="print_div">
+<FORM action="" enctype="" onsubmit="">
+<TABLE border="0" cellPadding="0" cellSpacing="8">
+  <tr>
+    <td class="wpsPortalText" valign="bottom">		
+		<p class="wpsPortalText">
+
+			<table class="contact-table" border="0">
+			<tr> 
+				<td colspan="7" class="wpsPortalText"><p class="wpsPortalText"><font color="#ff0000"><b id='RedAlert'></b></font></p></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Institution Information</span></td>  
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Name:</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="a1_Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Phone:</td> 
+				<td class="wpsformBox"><input type="Text" size="20" name="a2_Phone" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Title:</td>
+				<td class="wpsformBox"><input type="Text" size="20" name="a3_Title" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Email:</td> 
+				<td class="wpsformBox" width=40%><input type="Text" size="35" name="a4_Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">SOC Online Ordering</span></td> 
+			</tr>
+			
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Number of SOC reports requested:</td>
+				<td class="wpsformBox"><input type="Text" size="2" maxlength="2" name="b1_Number of SAS Requested" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">FIID:</td> 
+				<td class="wpsformBox" width=40%><input type="Text" size="8" name="b2_FIID" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Indicate format:</td>
+				<td class="wpsformBox" colspan="5">
+					<select class="" name="b3_Indicate format">
+						<option value=""> Select One </option>
+						<option value="hard">Hard Copy</option>
+						<option value="pdf">PDF</option>
+					</select>
+				</td> 
+				</td>
+			</tr>
+			
+			
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Shipping Information</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Address:</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="b4_Shipping Address" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">City:</td>
+				<td class="wpsformBox" ><input type="Text" size="15" name="b5_Shipping City" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">State:</td>
+				<td class="wpsformBox" ><select name="b6_Shipping State"> 
+											<option value ="">...</option>
+											<option value ="AK">AK</option><option value ="AL">AL</option><option value ="AR">AR</option><option value ="AZ">AZ</option><option value ="CA">CA</option><option value ="CO">CO</option><option value ="CT">CT</option><option value ="DE">DE</option> 
+											<option value ="DC">DC</option><option value ="FL">FL</option><option value ="GA">GA</option><option value ="HI">HI</option><option value ="IA">IA</option><option value ="ID">ID</option><option value ="IL">IL</option><option value ="IN">IN</option> 
+											<option value ="KS">KS</option><option value ="KY">KY</option><option value ="LA">LA</option><option value ="MA">MA</option><option value ="MD">MD</option><option value ="ME">ME</option><option value ="MI">MI</option><option value ="MN">MN</option> 
+											<option value ="MS">MS</option><option value ="MO">MO</option><option value ="MT">MT</option><option value ="NC">NC</option><option value ="ND">ND</option><option value ="NE">NE</option><option value ="NH">NH</option><option value ="NJ">NJ</option> 
+											<option value ="NM">NM</option><option value ="NV">NV</option><option value ="NY">NY</option><option value ="OH">OH</option><option value ="OK">OK</option><option value ="OR">OR</option><option value ="PA">PA</option><option value ="RI">RI</option> 
+											<option value ="SC">SC</option><option value ="SD">SD</option><option value ="TN">TN</option><option value ="TX">TX</option><option value ="UT">UT</option><option value ="VA">VA</option><option value ="VT">VT</option><option value ="WA">WA</option> 
+											<option value ="WI">WI</option><option value ="WV">WV</option><option value ="WY">WY</option> 
+										</select></td>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Zip:</td> 
+				<td class="wpsformBox"><input type="Text" size="6" maxlength="5" name="b7_Shipping Zip" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br></td> 
+			</tr>
+			<tr>
+				<td class="wpsformCheck">&nbsp;</td>
+				<td class="wpsformText" colspan="3">Did someone else at your institution ask you to place this order?</td>
+				<td class="wpsformCheck">
+					<input class="" type="Radio" name="b8_Some Body Ask To Place Order" id ="ID1_Some_test" value="YES">Yes&nbsp;
+					<input class="" type="Radio" name="b8_Some Body Ask To Place Order" id ="ID2_Some_test" value="NO">No
+				</td>
+				<td class="wpsformCheck" colspan="2">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">If yes, who:</td>
+				<td class="wpsformBox" colspan="5"><input type="Text" size="20" name="b9_Who" value="" class=""></td> 
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Submitting this form will add a fee of $275.00 per SOC report to your invoice</span></td> 
+			</tr>
+			
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsformText">Check here <input type="Checkbox" name="c1_Acknowledge The Charge" value="Checked" class=""> to acknowledge the charge.</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Additional Comments</span></td> 
+			</tr>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformBox" colspan="5"><textarea cols="63" name="c2_Additional Comments" rows="5" class=""></textarea></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			</table> 
+		</p>
+		&nbsp;
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

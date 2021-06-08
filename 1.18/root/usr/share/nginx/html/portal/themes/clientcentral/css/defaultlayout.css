@@ -1,0 +1,86 @@
+
+/* Layout Stylesheet */ 
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#c0c0c0;
+ 	color: #333333;
+}
+.outer {
+ height:100%;
+ width:100%;
+ background:#eeeeee;
+ color: #333333;
+
+ }
+
+.hdr {
+ height:65px;
+ background:#eeeeee;
+ color: #333333;
+
+ }
+
+.bar {
+ height:30px;
+ background-color:#6699CC;
+ color: #333333;
+ border:solid #000000;
+ border-width:0px 0 1px 0px;
+ 
+ }
+ 
+ .bbar {
+ height:15px;
+ background-color:#6611CC;
+ color: #333333;
+ border:solid #000000;
+ border-width:0px 0 1px 0px;
+ 
+ }
+ 
+
+
+
+.l-col {
+ background:#dcdcdc;
+ color: #333333;
+ width:150;
+ height:100%;
+ padding-right:0px;
+ 
+ 
+ }
+
+.cont {
+ width:100%;
+ background:#ffffff;
+ color: #333333;
+ text-align:left;
+ height:100%;
+ padding-left:0px;
+
+ }
+
+.ftr {
+ height:25px;
+ background:#639ACE;
+ color: #333333;
+ border:solid #000000;
+ border-width:1px 0 1px 0;
+
+ }
+
+div#tbl-container-Content{
+height: 100%;
+overflow: auto;
+}
+
+.informationalmessage
+{
+font-weight:bold;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#228B22
+}

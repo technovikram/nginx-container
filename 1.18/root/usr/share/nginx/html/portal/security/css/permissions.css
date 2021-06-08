@@ -1,0 +1,74 @@
+/*previously width was
+990px for this div,but changed due to
+page overflow issue on the
+Service Requests page under Reports tab.
+*/
+div#tbl-container {
+width: 990px;
+height: 230px;
+overflow: auto;
+}
+
+thead#tblhead th, {
+text-align: center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position:relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container").scrollTop-2); /*IE5+ only*/
+z-index: 20;
+}
+
+div#tbl-container-userInactivity {
+width: 950px;
+height: 330px;
+overflow: auto;
+}
+
+thead#tblheaduserInactivity th, {
+text-align: center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position:relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-userInactivity").scrollTop-2); /*IE5+ only*/
+z-index: 20;
+}
+
+div#tbl-container-groupReports {
+width: 680px;
+height: 370px;
+overflow: auto;
+}
+
+thead#tblheadgroupReports th, {
+text-align: center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position:relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-groupReports").scrollTop-2); /*IE5+ only*/
+z-index: 20;
+}
+
+thead#tblhead2 th, {
+text-align: center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position:relative;
+cursor: default;
+z-index: 20;
+}
+
+tbody#offTblBdy td {
+text-align: center;
+padding: 2px 5px 2px 2px;
+border-left: 1px solid silver;
+border-bottom: 1px solid silver;
+white-space: nowrap
+}
+

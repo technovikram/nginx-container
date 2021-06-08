@@ -1,0 +1,154 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>BP001</title>
+	<link href="/cwsi/formmanager/css/formmanager.css" rel="stylesheet" type="text/css">
+	<link href="/common/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<script>
+	function validateForm()
+		{	
+			showErrorMessageFM(document.getElementById('a1_Name'),"Name is required.");
+			showErrorMessageFM(document.getElementById('a2_Phone'),"Phone is required.");			
+		
+		}
+
+</script>
+
+<body class="wpsPortalText">
+<div id="print_div">
+<FORM action="" enctype="" onclick="">
+<TABLE border="0" cellPadding="0" cellSpacing="8">
+  <tr>
+    <td class="wpsPortalText" valign="bottom">		
+		<p class="wpsPortalText">
+
+			<table class="contact-table" border="0">
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Institution Information</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Name:</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="a1_Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Phone:</td> 
+				<td class="wpsformBox"><input type="Text" size="20" name="a2_Phone" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Title:</td>
+				<td class="wpsformBox"><input type="Text" size="20" name="a3_Title" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Email:</td> 
+				<td class="wpsformBox" width=40%><input type="Text" size="35" name="a4_Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Contact Information Change Request</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Department:</td>
+				<td class="wpsformBox"><input type="Text" size="20" name="b1_Department" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Cell Phone:</td> 
+				<td class="wpsformBox"><input type="Text" size="20" name="b2_Cell Phone" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Address:</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="b3_Contact Address" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">City:</td>
+				<td class="wpsformBox" ><input type="Text" size="15" name="b4_Contact City" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">State:</td>
+				<td class="wpsformBox" ><select name="b5_Contact State"> 
+											<option value ="">...</option>
+											<option value ="AK">AK</option><option value ="AL">AL</option><option value ="AR">AR</option><option value ="AZ">AZ</option><option value ="CA">CA</option><option value ="CO">CO</option><option value ="CT">CT</option><option value ="DE">DE</option> 
+											<option value ="DC">DC</option><option value ="FL">FL</option><option value ="GA">GA</option><option value ="HI">HI</option><option value ="IA">IA</option><option value ="ID">ID</option><option value ="IL">IL</option><option value ="IN">IN</option> 
+											<option value ="KS">KS</option><option value ="KY">KY</option><option value ="LA">LA</option><option value ="MA">MA</option><option value ="MD">MD</option><option value ="ME">ME</option><option value ="MI">MI</option><option value ="MN">MN</option> 
+											<option value ="MS">MS</option><option value ="MO">MO</option><option value ="MT">MT</option><option value ="NC">NC</option><option value ="ND">ND</option><option value ="NE">NE</option><option value ="NH">NH</option><option value ="NJ">NJ</option> 
+											<option value ="NM">NM</option><option value ="NV">NV</option><option value ="NY">NY</option><option value ="OH">OH</option><option value ="OK">OK</option><option value ="OR">OR</option><option value ="PA">PA</option><option value ="RI">RI</option> 
+											<option value ="SC">SC</option><option value ="SD">SD</option><option value ="TN">TN</option><option value ="TX">TX</option><option value ="UT">UT</option><option value ="VA">VA</option><option value ="VT">VT</option><option value ="WA">WA</option> 
+											<option value ="WI">WI</option><option value ="WV">WV</option><option value ="WY">WY</option> 
+										</select></td>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Zip:</td> 
+				<td class="wpsformBox"><input type="Text" size="6" maxlength="5" name="b6_Contact Zip" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				</td>
+			</tr>
+			
+			<tr> 
+				<td colspan="7"><br></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5">Please indicate whether you want to receive notice of the following items.  Leave unchanged items blank.</td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" colspan="2" nowrap>Business Partner Meetings:</td>
+				<td class="wpsformText" nowrap><input type="Radio" name="c1_Business Partner Meetings" value="Yes" class=""> Yes</td>
+				<td class="wpsformText" colspan="2" nowrap><input type="Radio" name="c1_Business Partner Meetings" value="No" class=""> No</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" colspan="2">Client Events:</td>
+				<td class="wpsformText"><input type="Radio" name="c2_Client Events" value="Yes" class=""> Yes</td>
+				<td class="wpsformText" colspan="2"><input type="Radio" name="c2_Client Events" value="No" class=""> No</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" colspan="2">FYIs/Alerts:</td>
+				<td class="wpsformText"><input type="Radio" name="c3_FYIs/Alerts" value="Yes" class=""> Yes</td>
+				<td class="wpsformText" colspan="2"><input type="Radio" name="c3_FYIs/Alerts" value="No" class=""> No</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" colspan="2">Teleconferences:</td>
+				<td class="wpsformText"><input type="Radio" name="c4_Teleconferences" value="Yes" class=""> Yes</td>
+				<td class="wpsformText" colspan="2"><input type="Radio" name="c4_Teleconferences" value="No" class=""> No</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+
+			
+		
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Additional Comments</span></td> 
+			</tr>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformBox" colspan="5"><textarea cols="65" name="c5_Additional Comments" rows="5" class=""></textarea></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			</table> 
+		</p>
+		&nbsp;
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

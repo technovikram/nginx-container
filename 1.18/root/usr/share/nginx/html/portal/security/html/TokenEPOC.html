@@ -1,0 +1,425 @@
+﻿<HTML>
+<HEAD>
+<title>User Administration&#151;Token</title>
+<!--Updated 10/08/07 G. Magarelli-->
+<link href='/common/css/main.css' rel="styleSheet" type="text/css">
+</head>
+
+<BODY>
+<strong>User Administration&#151;Token</strong>
+<p>Each user must have at least one hard or soft token assigned to their user ID to log onto the secure client website. This token provides a numeric password that ensures secure access. If the user needs additional soft tokens (one user record can have up to 25) or if the user's hard token is lost, stolen, damaged, or defective, use this page to manage all token requests. Based on the radio button selected, the page will change as needed to provide the information required to complete your request.
+<p><strong>Note:</strong> Your institution must be set up for soft tokens before the Soft Token Information section is displayed.
+<p>
+Click the following links for more information:
+<p>
+
+<A HREF="#anchor1a">Key Information</A>
+<br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor1b">First Name</A><br>
+	<A HREF="#anchor1c">Last Name</A><br>
+	<A HREF="#anchor1d">Institution ID</A><br>
+	<A HREF="#anchor1e">User ID</A>
+	</div>
+<p>
+
+<A HREF="#anchor2a">Soft Token Information</A><br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor2b">Remove</A><br>
+   	<A HREF="#anchor2c"> Serial Number </A><br>
+	<A HREF="#anchor2d">Generate Soft Tokens</A><br>
+    <A HREF="#anchor2e">Email</A></p>
+</div>
+<p>
+
+
+<A HREF="#anchor3a">Hard Token Information</A><br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor3b">Serial Number</A><br>
+    <A HREF="#anchor3c">None</A><br>
+	<A HREF="#anchor3d">Request Replacement Hard Token</A><br>
+    <A HREF="#anchor3e">Assign Existing Hard Token</A></p>
+</div>
+<p>
+
+<A HREF="#anchor4a">Replacement Reason</A><br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor4b">Replacement Reason</A>
+  </div>
+<p>	
+
+
+<A HREF="#anchor5a">Shipping Address</A><br>
+<div style="margin-left:25px">
+	<A HREF="#anchor5b">Administrator/User/Default/Other</A><br>
+	<A HREF="#anchor5c">Institution</A><br>
+	<A HREF="#anchor5d">Deliver To</A><br>
+	<A HREF="#anchor5e">Address</A><br>
+	<A HREF="#anchor5f">Country</A><br>
+	<A HREF="#anchor5g">City</A><br>
+	<A HREF="#anchor5h">State</A><br>
+	<A HREF="#anchor5i">ZIP</A><br>
+	<A HREF="#anchor5j">Phone</A><br>
+	<A HREF="#anchor5k">Ext</A><br>
+	<A HREF="#anchor5l">Fax</A><br>
+	<A HREF="#anchor5m">Email</A>
+</div>
+<p>	
+	
+<A HREF="#anchor6a">Original User Information</A><br>
+<div style="margin-left:25px">
+  <A HREF="#anchor6b">Hard Token Serial Number</A><br>
+  <A HREF="#anchor6c">First Name</A><br>
+  <A HREF="#anchor6d">Last Name</A><br>
+  <A HREF="#anchor6e">User ID</A>
+</div>
+<p>	
+
+<A HREF="#anchor7a">Comments</A>
+<p>	
+	
+<A HREF="#anchor8a">Buttons</A>
+	<br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor8b">OK</A><br>
+	<A HREF="#anchor8c">Cancel</A>
+	</div>
+	<p>
+		
+<A NAME="anchor1a"></A><strong>Key Information</strong><br>
+Read-only. Auto-filled with data that identifies the selected user.
+
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1b"></A>First Name 
+		</TD>
+		<TD valign="top">
+		First name of the user.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1c"></A>Last Name 
+		</TD>
+		<TD valign="top">
+		Last name of the user.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1d"></A>Institution ID 
+		</TD>
+		<TD valign="top">
+		Identifier assigned by Card Services for the selected institution. 
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1e"></A>User ID 
+		</TD>
+		<TD valign="top">
+		User ID of the selected user.</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor2a"></A><strong>Soft Token Information</strong> 
+<br>
+This  section provides the information required to view and manage a user's soft  tokens. It only displays when the institution has been set up to use soft  tokens.
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+  <TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2b"></A>Remove</TD>
+		<TD valign="top"><p>Check box which can be used to remove one or more soft tokens. </p>
+  <strong>Note:</strong> This would typically be used when a user forgets a soft token password. In that situation, the soft token record is removed and a new soft token is requested.</TD>
+	</TR>
+ <TR>
+		<TD valign="top" width="25%">
+  <A NAME="anchor2c"></A>Serial Numbers</TD>
+		<TD valign="top"><p>Listing of all soft tokens assigned to the user. Displays as Pending until the soft token has been activated. Once activated, the serial number displays.</p>
+    <p><strong>Note:</strong> User record can have up to 25 soft tokens. </p></TD>
+</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2d"></A>Generate Soft Token 
+		</TD>
+		<TD valign="top">
+		<p>Creates a new soft token request for the user. Two Security Token Assignment emails are generated&#151;one with the User ID and link to the activation portal and another with the activation code. Both are sent to the email address on this page. </p>
+  <p><strong>Note:</strong> You should not assign new soft token until the previous soft token has been activated. If there is a pending soft token request, the following message displays with OK and Cancel options when this box is checked: <em>User has a pending soft token request. If it has not been activated, requesting another soft token will generate an email with a new activation code that replaces the one provided previously</em>.</p></TD>
+	</TR>
+<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2e"></A>Email 
+		</TD>
+		<TD valign="top">
+		<p>Displays when the <A HREF="#anchor2c">Generate Soft Tokens</A> box is checked and is used for the soft token emails. Defaults to the email address from the User Administration&#151;User Details page. </p>
+  <strong>Note:</strong> Any changes made to this field also update the email address on the User Administration&#151;User Details page.</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor3a"></A><strong>Hard Token Information</strong> 
+<br>
+This section provides the information required to view and manage a user's hard tokens.
+
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3b"></A>Token Serial Number 
+		</TD>
+		<TD valign="top">Serial number of the user's hard token. Displays as Pending if a new hard token has been requested but not yet been assigned. This field will not display if the user record does not have a hard token.</TD>
+	</TR>	
+<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3c"></A>None 
+		</TD>
+		<TD valign="top">Default. Radio button that indicates there will be no requests for hard tokens at this time.</TD>
+	</TR>	
+<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3d"></A>Request Replacement Hard Token 
+	</TD>
+		<TD valign="top">
+		<p>Radio button. When selected, provides a page containing all of the necessary fields for requesting a new hard token.</p>
+  <ul>
+   <li>Replacement Reason</li>
+   <li>Shipping Address section</li>
+   <li>Comments</li>
+ </ul></TD>
+	</TR>
+ <TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3e"></A>Assign Existing Hard Token</TD>
+		<TD valign="top">
+		<p>Radio button. When selected, provides a page containing all of the necessary fields for reassigning an existing hard token.</p>
+  <ul>
+   <li>Original User Information section</li>
+   <li>Comments</li>
+  </ul></TD>
+  </TR>
+</table>
+
+<A HREF="#top">Back to Top</A> 
+ 
+ 
+ <p><A NAME="anchor4a"></A><strong>Replacement Reason</strong> 
+ <br>
+ This field displays when you choose the Request Replacement Hard Token radio button.</p>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4b"></A>Replacement Reason 
+	 </TD>
+		<TD valign="top">
+		<p>Replacement Reason is a required field that allows you to identify what happens to the original hard token. </p>
+		<p>Values: </p>
+		<ul><LI>Lost/Stolen
+			<LI>Damaged
+			<LI>Defective
+		</ul>
+		</TD>
+ </TR>
+</table>
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor5a"></A><strong>Shipping Address</strong> 
+<br>
+This section displays when you choose the Request Replacement Hard Token radio button. The new hard token is shipped to the address you select. Providing all requested information helps to ensure that the token gets shipped as early as possible.
+
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5b"></A>Administrator/User/Default/Other 
+  </TD>
+		<TD valign="top">
+		<p>Radio buttons. Auto-fills the shipping address fields as indicated below. The Other radio button is the only option which provides editable fields.
+    <ul>
+  <li><strong>Administrator</strong>&#151;Default. Hard token will be shipped to the address associated with your user security record.</li>
+   <li><strong>User</strong>&#151;Hard token will be shipped to the address from the User Administration&#151;User Details page for this user.</li>
+   <li><strong>Default</strong>&#151;Hard token will be shipped to the institution's default address. </li>
+   <li><strong>Other</strong>&#151;All address fields in this section are blank and editable. Hard token will be shipped to the address that is entered.</li>
+  </ul></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5c"></A>Institution 
+		</TD>
+		<TD valign="top">
+		Name of the institution to which the token is being shipped.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5d"></A>Deliver To 
+		</TD>
+		<TD valign="top">
+		Name of the person designated to receive the token. 
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5e"></A>Address 
+		</TD>
+		<TD valign="top">
+		Shipping address.<p><strong>Note:</strong> This must be a physical address, not a P.O. box. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5f"></A>Country 
+		</TD>
+		<TD valign="top">
+		Destination country of the shipment. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5g"></A>City 
+		</TD>
+		<TD valign="top">
+		Destination city of the shipment. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5h"></A>State 
+		</TD>
+		<TD valign="top">
+		Destination state of the shipment. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5i"></A>ZIP 
+		</TD>
+		<TD valign="top">
+		Destination ZIP code of the shipment. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5j"></A>Phone 
+		</TD>
+		<TD valign="top">
+		Phone number of the person designated to receive the token. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5k"></A>Ext 
+		</TD>
+		<TD valign="top">
+		Extension of the person designated to receive the token. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5l"></A>Fax 
+		</TD>
+		<TD valign="top">
+		Fax number of the person designated to receive the token. 
+	</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5m"></A>Email 
+		</TD>
+		<TD valign="top">
+		Email address of the person designated to receive the token. 
+	</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A><P>
+
+<A NAME="anchor6a"></A><strong>Original User Information</strong> 
+<br>
+This section displays when you choose the Assign Existing Hard Token radio button. Information requested relates to the original user of the token.
+
+
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor6b"></A>Hard Token Serial Number 
+		</TD>
+		<TD valign="top">
+		Serial number of the hard token to be reassigned.
+		 <p><strong>Note: </strong>A hard token can only be associated with one user record at a time. You would typically delete the original user record before reassigning the token but if the serial number is still assigned to another user record, you will be given the following message on this page: <em>Please check the token serial number entered. It is currently assigned to user x. To remove this token serial number from user x, click Remove</em>.</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor6c"></A>First Name 
+		</TD>
+		<TD valign="top">
+		First name of the original owner of the token. 
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor6d"></A>Last Name 
+		</TD>
+		<TD valign="top">
+		Last name of the original owner of the token. 
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor6e"></A>User ID 
+		</TD>
+		<TD valign="top">
+		User ID of the original owner of the token. 
+	</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A><P>
+
+<A NAME="anchor7a"></A><strong>Comments</strong> 
+<br>
+This section displays for both the Request Replacement Hard Token and Assign Existing Hard Token options.
+
+
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor7b"></A>Comments 
+		</TD>
+		<TD valign="top">
+		Enter comments that may be useful when processing the hard token request. 
+	</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor8a"></A><strong>Buttons</strong> <table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor8b"></A>OK 
+		</TD>
+		<TD valign="top">
+		 <p>Click to temporarily store the information entered and go to the User Record page. You can then choose to save your changes by selecting <strong>Update</strong> or you can make additional changes on any of the other tabs available for the selected user record.</p>
+	 <p> <strong>Note:</strong> You must select <strong>Update</strong> on the User Record page for your changes to be applied.</p></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor8c"></A>Cancel 
+		</TD>
+		<TD valign="top">
+		Click to discard your changes and return to the User Record page.
+		</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A><P>
+
+</BODY>
+</HTML>

@@ -1,0 +1,35 @@
+/******************************************************************************/
+/* Message styles                                                             */
+/******************************************************************************/
+.errormessagetitle
+{
+padding-left:7px;
+font-weight:bold;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#ff0000
+}
+
+
+.errormessage
+{
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#ff0000
+}
+
+/* duplicated because errormessage class conflicts with struts2 class styles  */
+.cwsierrormessage
+{
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#ff0000
+}
+
+.informationalmessage
+{
+font-weight:bold;
+font-family: Verdana, Arial, Helvetica;
+font-size: 8pt;
+color:#228B22
+}

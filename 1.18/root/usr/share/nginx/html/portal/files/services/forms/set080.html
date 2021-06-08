@@ -1,0 +1,197 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>SET080</title>
+	<link href="/cwsi/formmanager/css/formmanager.css" rel="stylesheet" type="text/css">
+	<link href="/common/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<script>
+	function validateForm()
+		{	
+			showErrorMessageFM(document.getElementById('a1_Name'),"Name is required.");
+			showErrorMessageFM(document.getElementById('a2_Phone'),"Phone is required.");
+			showErrorMessageFM(document.getElementById('b1_Transaction Card Number'),"Card Number is required.");
+			showErrorMessageFM(document.getElementById('b2_Transaction Date'),"Transaction Date is required.");
+			showErrorMessageFM(document.getElementById('b3_Transaction Amount'),"Transaction Amount is required.");
+			showErrorMessageForDropDownFM(document.getElementById('b6_Request Type'),"","Please select Request Type.");
+
+			
+			if(!(document.getElementById('ID1_Cancel_Type').checked ||					    document.getElementById('ID2_Cancel_Type').checked || document.getElementById('ID3_Cancel_Type').checked  )) {	
+
+									 addErrorMessage("Cancellation Type is required.");
+							}
+		
+			showErrorMessageFM(document.getElementById('b8_Expiration Date'),"Expiration Date is required.");
+			
+		}
+
+</script>
+
+<body class="wpsPortalText">
+<div id="print_div">
+<FORM action="" enctype="" onclick="">
+<TABLE border="0" cellPadding="0" cellSpacing="8">
+  <tr>
+    <td class="wpsPortalText" valign="bottom">		
+		<p class="wpsPortalText">
+
+			<table class="contact-table" border="0">
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Institution Information</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Name:</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="a1_Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Phone:</td> 
+				<td class="wpsformBox"><input type="Text" size="20" name="a2_Phone" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Title:</td>
+				<td class="wpsformBox"><input type="Text" size="20" name="a3_Title" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Email:</td> 
+				<td class="wpsformBox" width=40%><input type="Text" size="35" name="a4_Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Visa Preauthorized Payment Cancellation</span></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsPortalText">
+					The purpose of this form is to cancel preauthorized electronic funds transfers, such as automatic bill payments and installment payments. Please note: transactions that have already received an authorization approval must be allowed to clear and settle (PPCS will not stop these). For more information, please review <a href="/portal/files/services/forms/VisaBestPractices_PPCS.pdf" target="_blank">Visa's Best Practices for the PPCS</a> and the <a href="/portal/files/services/forms/VisaPreauthorizedPaymentCancellationService.pdf" target="_blank">Visa Preauthorized Payment Cancellation Service quick reference</a>.<br>
+					<br>
+					You can use this form to request one of the following:
+					<ul class="wpsPortalText">
+						<li>Stop payment order - stops a single specific preauthorized payment to a single merchant.
+						<li>Revocation of authorization order - stops all future preauthorized payments to a particular merchant.
+						<li>Revocation of all authorizations order - stops all bill payment transactions for a specific closed account. 
+					</ul>
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Card number:</td>
+				<td class="wpsformBox"><input type="Text" size="20" maxlength="16" name="b1_Transaction Card Number" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Transaction date:</td>
+				<td class="wpsformBox"><input type="Text" size="20" maxlength="16" name="b2_Transaction Date" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Transaction amount:</td>
+				<td class="wpsformBox" colspan="7"><input type="Text" size="8" name="b3_Transaction Amount" value="" class=""></td> 
+				</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Merchant</span></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsPortalText">
+					We suggest entering the merchant's name exactly as it appears in TranView. If the merchant name differs between the authorization record (PAD) and the clearing record (PAC), include both names to prevent payment. Note: Although Fiserv EFT only charges one fee per PPCS request, Visa charges a fee for each merchant name submitted (charged via Visa Integrated Billing).
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" colspan="4">Merchant name Authorization record (PAD):</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="b4_PAD" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" colspan="4">Merchant name Clearing record (PAC):</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="b5_PAC" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Cancellation</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Request type:</td>
+				<td class="wpsformBox" colspan="5">
+					<select name="b6_Request Type">
+						<option value="">Select One</option>
+						<option value="Add">Add</option>
+						<option value="Modify">Modify</option>
+						<option value="Delete">Delete</option>
+					</select>
+				</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Cancellation type:</td>
+				<td class="wpsformBox" colspan="5">
+						<input type="Radio" name="b7_Cancel Type" id="ID1_Cancel_Type" value="stop" class="">Stop payment order<br>
+						<input type="Radio" name="b7_Cancel Type" id="ID2_Cancel_Type" value="Revocation_or_authorization" class="">Revocation or authorization order<br>
+						<input type="Radio" name="b7_Cancel Type" id="ID3_Cancel_Type" value="Revocation_of_all)authorizations" class="">Revocation of all authorizations order 
+				</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Expiration date</span></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsPortalText">
+					Visa recommended expiration dates: Stop payment order - 10 business days after scheduled due date; Revocation orders - 1 year. Please use MM/DD/YYYY format
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText" nowrap>Expiration date:</td>
+				<td class="wpsformBox" colspan="5"><input type="Text" size="30" name="b8_Expiration Date" value="" class=""></td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Additional Comments</span></td> 
+			</tr>
+				<td width="20">&nbsp;</td>
+				<td class="wpsformBox" colspan="5"><textarea cols="65" name="b9_Additional Comments" rows="5" class=""></textarea></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			</table> 
+		</p>
+		&nbsp;
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

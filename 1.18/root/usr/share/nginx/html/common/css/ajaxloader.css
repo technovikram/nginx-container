@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+#ajaxBackground {					
+	display:none;
+	top: 0px;
+	background-color: #ffffff;
+	opacity: 0.4;
+	filter: alpha(opacity = 40); /* For IE8 and earlier */
+	position: absolute;			
+}
+
+#ajaxImg {	
+	position:absolute;
+	top:400px;
+	left:400px;
+}			

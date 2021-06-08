@@ -1,0 +1,211 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>SET110</title>
+	<link href="/cwsi/formmanager/css/formmanager.css" rel="stylesheet" type="text/css">
+	<link href="/common/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<script>
+	function validateForm()
+		{	
+			showErrorMessageFM(document.getElementById('a1_Name'),"Name is required.");
+			showErrorMessageFM(document.getElementById('a2_Phone'),"Phone is required.");
+
+			showErrorMessageFM(document.getElementById('b1_Tracer1'),"Please fill in the entire first row of Tracer at minimum.");
+
+			showErrorMessageFM(document.getElementById('b2_Sequence1'),"Please fill in the entire first row of Sequence at minimum.");
+
+			showErrorMessageFM(document.getElementById('b3_Amount1'),"Please fill in the entire first row of Adj. Amount at minimum.");
+
+			showErrorMessageForDropDownFM(document.getElementById('b4_Debit/Credit 1'),"","Please fill in the entire first row of Debit/Credit at minimum.");
+
+			showErrorMessageForDropDownFM(document.getElementById('b5_Approve/Deny 1'),"","Please fill in the entire first row of Approve/Deny at minimum.");
+		}
+
+</script>
+
+<body class="wpsPortalText">
+<div id="print_div">
+<FORM action="" enctype="" onclick="">
+<TABLE border="0" cellPadding="0" cellSpacing="8">
+  <tr>
+    <td class="wpsPortalText" valign="bottom">		
+		<p class="wpsPortalText">
+
+			<table class="contact-table" border="0">
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Institution Information</span></td> 
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Name:</td>
+				<td class="wpsformBox"><input type="Text" size="30" name="a1_Name" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Phone:</td> 
+				<td class="wpsformBox"><input type="Text" size="20" name="a2_Phone" value="" class=""></td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr valign="top">
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Title:</td>
+				<td class="wpsformBox"><input type="Text" size="20" name="a3_Title" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+				<td class="wpsformText">Email:</td> 
+				<td class="wpsformBox" width=40%><input type="Text" size="35" name="a4_Email" value="" class=""></td> 
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7"><br><br></td> 
+			</tr>
+			<tr> 
+				<td colspan="7" class="heading"><span class="heading">Pulse Good Faith Claims</span></td> 
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsPortalText">
+					Please enter the following information to respond to a Good Faith claim.<br><br>
+					<a href="/portal/files/services/forms/PulseGFClaimProcedure.pdf" target="_blank" class="">Pulse Good Faith Claims Procedure</a><br><br>
+					Information can be found in the IR860E Report.<br><br>
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			<tr> 
+				<td colspan="7" class="wpsPortalText" align="center">
+					<table class="contact-table" border="1" cellpadding="3" cellspacing="0">
+					<tr valign="top">
+						<td class="wpsformText"><b>Tracer #</b></td>
+						<td class="wpsformText"><b>Sequence #</b></td>
+						<td class="wpsformText"><b>Adj. Amount</b></td>
+						<td class="wpsformText"><b>Debit/Credit</b></td>
+						<td class="wpsformText"><b>Approve/Deny</b></td>
+					</tr>
+					<tr>
+						<td class="wpsPortalText"><input type="Text" size="14" class="wpsPortalText" name="b1_Tracer1" value=""></td> 
+						<td class="wpsPortalText"><input type="Text" size="12" class="wpsPortalText" name="b2_Sequence1" value=""></td> 
+						<td class="wpsPortalText" nowrap>$<input type="Text" size="10" class="wpsPortalText" name="b3_Amount1" value=""></td></td> 
+						<td class="wpsPortalText"> 
+							<select name="b4_Debit/Credit 1" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Debit">&nbsp;Debit&nbsp;</option> 
+								<option value="Credit">&nbsp;Credit&nbsp;</option> 
+							</select> 
+						</td> 
+						<td class="wpsPortalText"> 
+							<select name="b5_Approve/Deny 1" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Approve">&nbsp;Approve&nbsp;</option> 
+								<option value="Deny">&nbsp;Deny&nbsp;</option> 
+							</select> 
+						</td> 
+					</tr>
+					<tr>
+						<td class="wpsPortalText"><input type="Text" size="14" class="wpsPortalText" name="c1_Tracer2" value=""></td> 
+						<td class="wpsPortalText"><input type="Text" size="12" class="wpsPortalText" name="c2_Sequence2" value=""></td> 
+						<td class="wpsPortalText" nowrap>$<input type="Text" size="10" class="wpsPortalText" name="c3_Amount2" value=""></td></td> 
+						<td class="wpsPortalText"> 
+							<select name="c4_Debit/Credit 2" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Debit">&nbsp;Debit&nbsp;</option> 
+								<option value="Credit">&nbsp;Credit&nbsp;</option> 
+							</select> 
+						</td> 
+						<td class="wpsPortalText"> 
+							<select name="c5_Approve/Deny 2" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Approve">&nbsp;Approve&nbsp;</option> 
+								<option value="Deny">&nbsp;Deny&nbsp;</option> 
+							</select> 
+						</td> 
+					</tr>
+					<tr>
+						<td class="wpsPortalText"><input type="Text" size="14" class="wpsPortalText" name="d1_Tracer3" value=""></td> 
+						<td class="wpsPortalText"><input type="Text" size="12" class="wpsPortalText" name="d2_Sequence3" value=""></td> 
+						<td class="wpsPortalText" nowrap>$<input type="Text" size="10" class="wpsPortalText" name="d3_Amount3" value=""></td></td> 
+						<td class="wpsPortalText"> 
+							<select name="d4_Debit/Credit 3" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Debit">&nbsp;Debit&nbsp;</option> 
+								<option value="Credit">&nbsp;Credit&nbsp;</option> 
+							</select> 
+						</td> 
+						<td class="wpsPortalText"> 
+							<select name="d5_Approve/Deny 3" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Approve">&nbsp;Approve&nbsp;</option> 
+								<option value="Deny">&nbsp;Deny&nbsp;</option> 
+							</select> 
+						</td> 
+					</tr>
+					<tr>
+						<td class="wpsPortalText"><input type="Text" size="14" class="wpsPortalText" name="e1_Tracer4" value=""></td> 
+						<td class="wpsPortalText"><input type="Text" size="12" class="wpsPortalText" name="e2_Sequence4" value=""></td> 
+						<td class="wpsPortalText" nowrap>$<input type="Text" size="10" class="wpsPortalText" name="e3_Amount4" value=""></td></td> 
+						<td class="wpsPortalText"> 
+							<select name="e4_Debit/Credit 4" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Debit">&nbsp;Debit&nbsp;</option> 
+								<option value="Credit">&nbsp;Credit&nbsp;</option> 
+							</select> 
+						</td> 
+						<td class="wpsPortalText"> 
+							<select name="e5_Approve/Deny 4" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Approve">&nbsp;Approve&nbsp;</option> 
+								<option value="Deny">&nbsp;Deny&nbsp;</option> 
+							</select> 
+						</td> 
+					</tr>
+					<tr>
+						<td class="wpsPortalText"><input type="Text" size="14" class="wpsPortalText" name="f1_Tracer5" value=""></td> 
+						<td class="wpsPortalText"><input type="Text" size="12" class="wpsPortalText" name="f2_Sequence5" value=""></td> 
+						<td class="wpsPortalText" nowrap>$<input type="Text" size="10" class="wpsPortalText" name="f3_Amount5" value=""></td></td> 
+						<td class="wpsPortalText"> 
+							<select name="f4_Debit/Credit 5" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Debit">&nbsp;Debit&nbsp;</option> 
+								<option value="Credit">&nbsp;Credit&nbsp;</option> 
+							</select> 
+						</td> 
+						<td class="wpsPortalText"> 
+							<select name="f5_Approve/Deny 5" class="wpsPortalText"> 
+								<option value=""></option> 
+								<option value="Approve">&nbsp;Approve&nbsp;</option> 
+								<option value="Deny">&nbsp;Deny&nbsp;</option> 
+							</select> 
+						</td> 
+					</tr>
+					</table>
+				</tr>
+				<tr> 
+					<td colspan="7"><br><br></td> 
+				</tr>
+
+				<tr> 
+					<td colspan="7" class="heading"><span class="heading">Additional Comments</span></td> 
+				</tr>
+				<tr>
+					<td width="20">&nbsp;</td>
+					<td class="wpsformBox" colspan="5"><textarea cols="65" name="g1_Additional Comments" rows="5" class=""></textarea></td> 
+					<td width="20">&nbsp;</td>
+				</tr>
+				<tr> 
+					<td colspan="7"><br><br></td> 
+				</tr>
+				<tr>
+				<td width="20">&nbsp;</td>
+				<td colspan="5" class="wpsPortalText">
+					By clicking submit, I authorize Fiserv to take the requested actions.
+				</td>
+				<td width="20">&nbsp;</td>
+			</tr>
+			</table> 
+		</p>
+		&nbsp;
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

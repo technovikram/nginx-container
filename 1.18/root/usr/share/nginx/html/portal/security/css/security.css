@@ -1,0 +1,34 @@
+/* override default tbl-container for Security Choose User page */
+div#tbl-container-security {
+height: 240px;
+overflow: auto;
+}
+
+#tbl-container-security thead#tblhead th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-security").scrollTop-2);
+z-index: 20;
+}
+
+div#tbl-container-tokensecurity {
+height: 130px;
+width: 360px;
+overflow: auto;
+}
+
+#tbl-container-tokensecurity thead#tblhead th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+cursor: default;
+top: expression(document.getElementById("tbl-container-tokensecurity").scrollTop-2);
+z-index: 20;
+}
+

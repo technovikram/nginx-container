@@ -1,0 +1,874 @@
+html,body{background:#fff;height: 100%; width: 100%; }
+#mainWrapper{min-width: 960px; max-width: 1240px; margin: auto; margin-bottom:-60px;  position: relative; height: auto; min-height: 100%; overflow: hide; width: 100%;  /* box-shadow: 0 1px 2px 1px #d4d7db !important ; */ }
+
+#header{
+	float: left;
+    width: 100%;
+	position: absolute;
+	top: 0;
+    left: 0;
+	height: 65px; 
+
+}
+#header .logoText {font-size:24px; margin-top: 10px; display: inline-block; }
+#header .logoColor{ color:#ff8b42;}
+#mainSection{
+	position: absolute;
+    top: 65px;
+    left: 0;
+    bottom: 60px;
+    float: left;
+    width: 100%;
+    overflow: hide;
+}
+section #content{ height:100%;}
+section #mainContent{ height:100%; background:#fff; }
+
+.wrapper{ 
+	position: relative !important;
+	 top: inherit !important;
+    left: inherit !important;
+    bottom: inherit !important;
+	margin-top:60px;
+	margin-bottom:-100px;
+	padding:20px 0px 120px;
+	height: 100%;
+	z-index: inherit important;
+ }
+
+body > .wrapper {
+    height: auto; 
+    min-height: 100%;
+}
+
+#midContent{height:100%; margin-bottom:0px; padding-top: 100px; padding-top:30px; }
+.orangeHeading{   color:#FF6600; font-weight: bold;}
+.treeControl{margin: 0px; list-style: none; font-size:14px;}
+.treeControl li {  width: 100%;  }
+.treeControl li ul{ margin-left: 15px; margin-top: 10px; list-style: none; }
+.treeControl li ul li {font-weight: normal;}
+#footer{width: 100%; margin:auto;height: 60px; position: relative; clear: both; max-width: 1240px; min-width: 960px;}
+
+.verticalDivider{ vertical-align: middle; min-height: 30px; border-left: 1px solid #E0E0E0 !important; min-width: 1px;  }
+
+.fdl-select .posRightArrow {
+    right: 10px;
+    right:8px\9;
+    position: absolute !important;
+    top: 8px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.fdl-select .posRightArrow { right:8px; } /* Only works in IE10 */ 
+
+*::-ms-backdrop, .fdl-select .posRightArrow  { right:8px; } /* IE11 */
+/* helper classes */
+.grayBgColor{background-color: #FAFAFA;}
+.redText{ color: red}
+.disBlock{display: block;}
+.disInlineBlock{display: inline-block;}
+.maxHeight300{max-height: 300px !important ; overflow: auto;}
+.ml40{margin-left:40px;}
+.padding0{padding: 0px !important;}
+/* width helper */
+.widthAuto{width:auto !important;}
+.minWidth40{ min-width: 40px}
+.maxWidth90{ max-width: 90px;}
+.minWidth100{ min-width: 100px}
+.minWidth400{min-width: 400px;}
+.maxWidth120{max-width: 120px;}
+.minWidth200{min-width: 200px;}
+.maxWidth800{ max-width: 800px !important;}
+.maxWidth240{max-width: 280px !important;}
+.maxWidth200{max-width: 200px;}
+.maxWidth600{max-width: 600px !important;}
+.maxWidth250{ max-width: 250px;}
+.maxWidth100{max-width: 100px;}
+.maxWidth60{max-width: 60px;}
+.maxWidth400{max-width: 400px !important;}
+.minHeight600px{min-height: 600px;}
+.minHeight450px{min-height: 450px;}
+.maxWidth930{ max-width:930px !important;}
+.clearBoth{clear: both;}
+.margin0{ margin: 0}
+.maxHeight220{ max-height:220px !important; overflow: auto;}
+.border{ border: 1px solid #e0e0e0; }
+.borderNone{border:none !important}
+.divider{ border-bottom:1px solid #e0e0e0; clear: both; display: block; padding: 10px 0; margin:15px 5px; }
+.seccondLevelModal {
+	z-index: 1080 !important;
+}
+.listUi{ margin: 10px 20px; list-style: disc ; }
+.listUi li{padding:5px 10px;}
+a[class="disabled"] {
+  pointer-events: none;
+  color:#000;
+  
+}
+.nav li a[class="disabled"] {
+  pointer-events:none;
+  cursor:not-allowed;
+  color:#A6A6A6;
+}
+.readOnlyLink{  pointer-events:none;
+  cursor:not-allowed;}
+.posRelative{position: relative;}
+.progreessHighlighter{position:absolute; max-width: 215px; right:0px; width: 32%; top:-8PX; font-size: 12px; }
+.padd10{ padding: 10px;}
+.padd5{padding: 5px !important;}
+.mr5{margin-right: 5px;}
+.ml5{margin-left: 5px;}
+.vBorder{border-right: 1px solid #e0e0e0;}
+.dotCircle{display: inline-block;  height:12px; width:12px; border-radius: 6px;}
+.redBgColor{background-color:#dd3435;}
+.greeBgColor{background-color:#54b34a;}
+.quotes{font-size: 40px; font-weight: bold; vertical-align: middle;}
+/* modal footer overrides */    
+.modal.full-width .modal-footer {
+    background: #fff;
+border-top: 1px solid #E0E0E0 !important;}
+.modal-dialog .modal-content .modal-footer .btn + .btn {
+margin-left: 10px !important;}
+
+/* table with tbl class with 10px col padding */
+.tbl td{ padding: 10px !important; text-align: center;}
+
+
+/* Fee Item Style */
+
+/*Custom style of Fee Item*/
+.stepper-tab-form .subheading{
+    font-size: 14px;
+    font-weight: normal;
+}
+.stepper-tab-form{
+    padding:0;
+}
+.stepper-tab-form .tab-content{
+    padding:0;
+    
+}
+.stepper-tab-form .table{
+    margin-top: 15px;
+}
+.stepper-tab-form .table > thead > tr > th{
+    color:#69c;
+}
+.search-panel .fdl-select .material-icons{
+    pointer-events: none;
+}
+label.blank{
+    width: 100%;
+}
+.search-panel-row{
+    padding: 15px 0px 0px 0px;
+}
+.checkbox label{
+    margin-right: 5px;
+}
+.stepper-tab-form .nav-tabs > li i.material-icons {
+    position: static;
+}
+.stepper-tab-form .nav-tabs > li a{
+    text-transform:uppercase;
+    padding: 20px !important;
+}
+.stepper-tab-form .step-flow{
+    border:none;
+    padding-bottom: 0;
+}
+
+.stepper-tab-form .table > tbody > tr > td{
+    vertical-align: middle;
+}
+.stepper-tab-form  ol.step-flow > li {
+    width: 150px;
+    padding: 0;
+}
+.requestFeeID_Section{
+    border-left: 1px solid #e0e0e0;
+    height: 80px;
+}
+
+ol.step-flow > li.active::before {
+    background: #757575;
+}
+ol.step-flow > li{
+    padding: 0;
+}
+.step-flow.nav-tabs > li.active > a, .step-flow.nav-tabs > li.active a:hover, .step-flow.nav-tabs > li.active a:focus{
+  border-bottom: 0;
+}
+.popover span{
+    font-size:12px;
+}
+.popover label{
+    font-size:12px; 
+    color: #e0e0e0;
+}
+.popover{
+    padding-bottom:30px;
+    max-width: 500px;
+    line-height: 1.2;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+    font-size: 12px;
+ /*   transform: translate3d(0, -10px, 0), 0, 0, 0;
+    transition: opacity 300ms ease-in, 300ms cubic-bezier(0.5, 0.8, 0, 1);
+   */ background-color: #424242;
+    border-radius: 2px;
+    color: #fff;
+    padding: 20px 15px;
+    text-align: left;
+}
+.popover.left > .arrow:after{
+
+    border-left-color: #424242;
+}
+.popover.right > .arrow:after{
+    border-right-color: #424242;
+}
+.figure-table .figure-amt{
+  float:right;
+}
+.head-title{
+  padding-bottom: 10px;
+}
+.heading-price{
+  font-size: 12px;
+}
+.small-modal .modal-content{
+    border-radius: 0;
+}
+.small-modal .modal-header {
+    background: #424242;
+    border-bottom: 0;
+    padding: 10px 25px;
+    color: #fff;
+}
+.small-modal .modal-content button.close{
+    color: #fff !important;
+}
+.confrm-box .info-icon{
+    float: left;
+    margin-right: 15px;
+}
+.confrm-box .info-icon i{
+    font-size: 55px;
+}
+.confrm-box{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.small-modal .modal-dialog .modal-content .modal-footer{
+    border-top: 0;
+}
+.modal-dialog .modal-content .modal-header{
+    border-bottom: 0;
+}
+.small-modal .modal-body{
+    padding:0;
+}
+.confrm-box p{
+    color: #757575;
+}
+.stepper-tab-form .tab-pane{
+    padding-right: 10px;
+}
+.devider-save{
+    border-top: 1px solid #E0E0E0;
+    margin-top: 15px;
+}
+.feeID_PropTable th small{
+    line-height: 1rem;
+}
+.feeID_PropTable input[type="text"]{
+    width:100%;
+    text-align: right;
+}
+.feeID_PropTable tr td:last-child input[type="text"]{
+    float: left;
+}
+ 
+.input-info{
+    padding-top:5px;
+    padding-left: 2px;
+}
+
+/*Custom-style*/
+.stepper-tab-form .subheading{
+    font-size: 14px;
+    font-weight: normal;
+}
+.stepper-tab-form{
+    padding:0;
+}
+.stepper-tab-form .tab-content{
+    padding:0;
+     
+}
+.stepper-tab-form .table{
+    margin-top: 15px;
+}
+.stepper-tab-form .table > thead > tr > th{
+    color:#69c;
+    border: none;
+    line-height: 1.4;
+    vertical-align: top;
+}
+.stepper-tab-form .table > thead > tr > th small{
+  line-height: 1.4;
+}
+.search-panel .fdl-select .material-icons{
+    pointer-events: none;
+}
+label.blank{
+    width: 100%;
+}
+.search-panel-row{
+    padding: 15px 0px 0px 0px;
+}
+.checkbox label{
+    margin-right: 5px;
+}
+.stepper-tab-form .nav-tabs > li i.material-icons {
+    position: static;
+}
+.stepper-tab-form .nav-tabs > li a span{
+    text-transform: capitalize ! important;
+}
+.stepper-tab-form .nav-tabs > li a{
+    text-transform: capitalize ! important;
+    padding: 20px !important; 
+}
+.stepper-tab-form .step-flow{
+    border:none;
+    padding-bottom: 0;
+}
+.stepper-tab-form .table > tbody > tr > td{
+    vertical-align: middle;
+    line-height: 1;
+
+}
+.stepper-tab-form .table > tbody > tr > td small{
+  
+    line-height: 1.2;
+}
+/* .stepper-tab-form .tab-content > .tab-pane {
+    overflow: auto;
+    max-height: 215px;
+} */
+#feeItems h4, .feeitem-wrapper h4{
+    margin-bottom: 13px;
+}
+
+.stepper-tab-form  ol.step-flow > li {
+    width: 150px;
+    padding: 0;
+}
+.requestFeeID_Section{
+    border-left: 1px solid #e0e0e0;
+    height: 80px;
+}
+
+ol.step-flow > li.active::before {
+    background: #757575;
+}
+ol.step-flow > li{
+    padding: 0;
+}
+.tooltip{transform:none !important; transition: none !important}
+.step-flow.nav-tabs > li.active > a, .step-flow.nav-tabs > li.active a:hover, .step-flow.nav-tabs > li.active a:focus{
+  border-bottom: 0;
+}
+.popover span{
+    font-size:11px;
+}
+.popover label{
+    font-size:11px; 
+}
+.popover{
+    padding-bottom:30px;
+    max-width:none !important;
+    min-width: 450px;
+    padding-left: 5px;
+}
+.figure-table .figure-amt{
+  float:right;
+}
+.head-title{
+  padding-bottom: 10px;
+}
+.heading-price{
+  font-size: 12px;
+}
+tr.no-border td {
+    border: none !important;
+}
+.btn-container{
+    text-align: right;
+    border-top: 1px solid #ddd;
+    padding: 15px 5px 0 0;
+}
+
+#addProjectItemModal .modal-body {
+    padding-bottom: 5px;
+}
+.btn-div{
+    display: inline-block;
+}   
+.vdivide{
+    border-left: 1px solid #ddd
+}
+.no-selected{
+    padding: 15px;
+    text-align: center;
+}
+
+.tier-alignment{
+    padding-top: 6px;
+}
+.list-price {
+    text-align: right;
+}
+.list-price label input[type=text]{
+    text-align: right;
+} 
+.progreessHighlighter .vBorder {
+    padding-bottom: 5px;
+}  
+.nopadding{
+    padding:0;
+}
+
+/*FeeID alignment*/
+.stepper-tab-form .feeID_PropTable.table > thead > tr > th{
+    width: 30px;
+}
+.stepper-tab-form .feeID_PropTable.table > thead > tr > th{
+    line-height: 1.3;
+    vertical-align: middle;
+}
+.stepper-tab-form .feeID_PropTable.table > thead > tr > th small{
+    color:#69c;
+}
+/* Break word  */
+.break-Word{ word-break: break-all;}
+.hyphenate {
+ overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+/*Loader CSS*/
+.sample-block {
+  border: 0px solid #e0e0e0 !important;
+  padding:0px  !important; 
+  position: relative; }
+  .loader{ z-index:6000 !important;}
+  .block-overlay{z-index:5999 !important;
+  bottom:0 !important;}
+.loaderwrapper .block-overlay{
+    z-index: 3;
+}
+.loaderNew{
+    z-index: 9;
+    background-size: 120px 120px !important;
+    height: 120px !important;
+    width: 120px !important;
+}
+.loaderwrapper{
+    border:none;
+    padding: 0px;
+    position: relative;
+}
+.loaderwrapper .loader{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*Loader CSS*/
+.form-group label.fdl-select::after{
+	color: transparent !important;
+} 
+/*Custom style of Fee Item*/
+/*Fee Item alignment Changes*/
+@media screen\0 { 
+    .loaderwrapper {
+        border: 0.1px solid transparent;
+        
+    }
+    
+}
+.segmentalign {
+    padding-right:15px;
+}
+.Segment .form-horizontal input[type=text]{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.Segment .form-horizontal label{
+    display:flex;
+    align-items: center;    
+}
+.Segment .form-horizontal{
+    display: flex;
+    align-items: center;
+}
+.maxWidth220{
+    max-width: 220px;
+}
+.pl5{
+    padding-left: 5px;
+}
+.mb0{
+    margin:0;
+}
+.pl0{padding-left:0px;}
+.segment-listprice{
+    display: block;
+    width: 170px;
+    text-align: right;
+}
+.list-pricesegment{
+    text-align: right;
+    display:block;
+}
+.maxHeight500 {
+    max-height: 500px !important;
+    overflow: auto;
+}
+.modal{
+    overflow: auto;
+}
+.material-icons-rd-chbx, .checkbox input[type='checkbox'] + input[type='hidden'] + label::before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  direction: rtl;
+  display: inline-block;
+  font-family: 'Material Icons';
+  /* font-feature-settings: 'liga'; */  
+  font-style: normal;
+  font-weight: normal;
+  height: 1em;
+  letter-spacing: normal;
+  line-height: 1;
+  /* text-rendering: optimizeLegibility; */
+  text-transform: none;
+  white-space: nowrap;
+  width: 1em;
+   
+  word-wrap: normal;
+  }
+
+.checkbox input[type='checkbox']  {
+  display: block;
+  opacity: 0; }
+
+.checkbox input[type='checkbox'] + input[type='hidden'] + label::before {
+  background-color: #fff;
+  border: 1px solid #757575; 
+  border-radius: 2px;
+  color: #fff;
+  content: '';
+  font-size: 16px;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  }
+
+.checkbox input[type='checkbox'].error  + input[type='hidden'] + label::before {
+  border-color: #dd3435; }
+
+.checkbox input[type='checkbox']:checked:focus  + input[type='hidden'] + label::before {
+  border-color: #69c;
+  box-shadow: 0 0 2px 2px rgba(56, 102, 195, 0.47);
+  content: '\E876'; }
+
+.checkbox input[type='checkbox']:focus +  input[type='hidden'] label::before {
+  border-color: #69c;
+  box-shadow: 0 0 2px 2px rgba(56, 102, 195, 0.47); }
+
+.checkbox input[type='checkbox']:disabled  +  input[type='hidden'] + label::before {
+  border: 1px solid #e0e0e0; }
+
+.checkbox input[type='checkbox']:disabled   +  input[type='hidden'] + label {
+  color: #bcbcbc; }
+
+.checkbox input[type='checkbox']:checked  + input[type='hidden'] + label::before {
+  color: #757575;
+  content: '\E876'; }
+
+.checkbox input[type='checkbox']:checked:hover  + input[type='hidden'] + label::before {
+  background-color: #69c;
+  border-color: #69c;
+  color: #fff; }
+/*Fee Item alignment Changes*/
+/*Updated Structure Fee Item tab*/
+.stepper-tab-form .wid86{
+    width: 86px !important;
+}
+.stepper-tab-form .wid135{
+    width: 135px !important;
+}
+.stepper-tab-form .wid80{
+    width: 80px !important;
+}
+.stepper-tab-form .widPrice{
+    width: 16% !important;
+}
+
+.stepper-tab-form .table.feeID_PropTable .checkbox label span{
+     
+    padding-left: 22px;
+    color:#212121;
+}
+
+.feeID_PropTable input.form-control {
+    padding: 4px 4px;
+}
+.table.feeID_PropTable tbody td{
+    padding: 3px 2px;
+    height: 34px;
+}
+.stepper-tab-form table.feeID_PropTable.table > thead > tr > th{
+    padding: 3px 2px;
+}
+.max-wid250{
+    max-width: 250px;
+}
+.tbl tbody th {
+    font-weight: normal;
+}
+/*table data wrap*/ 
+.tabledata-wrap tbody td {
+    max-width: 120px;
+    word-wrap: break-word;
+} 
+/*table data wrap*/ 
+.levelData {
+    padding-left: 60px;
+    
+}
+.levelHeader {
+    float: left;
+    font-weight: 600;
+}
+ul.treeControl{
+
+    padding-right: 10px;
+}
+.prodline-height{
+    padding-right:5px;
+    padding-top: 10px;
+    min-height:300px;
+} 
+.subheading{
+    font-size: 14px;
+    font-weight: normal;
+}
+.details-subheading{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+}
+/*Alert Modals Vertical alignment*/
+.alertModalCenter.modal {
+    text-align: center;
+    padding: 0!important;
+}
+.alertModalCenter.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}  
+.alertModalCenter .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+/*Alert Modals Vertical alignment*/
+/*broswer specific form control*/
+.form-control:focus {
+    border-color: #3966c3 !important;
+}
+label.listPriceLabel {
+    width: 47%;
+    text-align: right;
+}
+
+/* table.table.feeID_PropTable tr td {
+    vertical-align: top;
+} */
+ 
+/*View Project Item Modal CSS*/
+.view_project_tbl.table > tbody > tr:last-child{
+    border-bottom: none;
+}
+.view_project_tbl.table > thead > tr > th, .view_project_tbl.table > tbody > tr > td {
+    border: none;
+}
+.dashed-divider{ border-bottom:2px dashed #e0e0e0; clear: both; display: block; padding: 10px 0; margin:15px 5px; }
+.ViewprojectDetailData .view_project_tbl th{
+    padding: 11px 2px;
+}
+/*View Project Item Modal CSS*/
+.popover-content{
+    padding: 0;
+}
+.pb5{
+    padding-bottom:5px;
+}
+/*disabled button style css*/
+.btn-primary[disabled]:active,.btn-primary[disabled]:active:focus, .btn-primary[disabled]:active:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0; 
+}
+.btn-primary.disabled:active{
+    background-color: #e0e0e0;
+    border-color: #e0e0e0; 
+}
+.stepper-tab-form  ol.step-flow > li.inactive a:hover,
+.stepper-tab-form ol.step-flow > li.inactive:hover a,
+.stepper-tab-form ol.step-flow > li.completed:hover a  {
+    color:#9e9e9e;
+}
+ol.step-flow > li.inactive a:hover span.state,
+.stepper-tab-form ol.step-flow > li.inactive:hover span.state {
+    background: #e0e0e0;
+}
+.stepper-tab-form ol.step-flow > li.completed:hover a  {
+    color:#212121;
+}
+.checkbox input[type='checkbox'][disabled]:checked:hover + label::before {
+    background-color: transparent;
+    border-color: #e0e0e0;
+    color: #757575;;
+} 
+.label-listPrice{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/*Global Font Size change request*/
+body{
+    font-size: 11px;
+}
+.form-control{
+    font-size: 11px;
+    height: 30px;
+}
+label{
+    font-size: 11px;
+}
+.table > thead > tr > th{
+    font-size: 11px;
+    padding: 11px 5px;
+}
+.table > thead > tr > th, .table > thead > tr > td, 
+.table > tbody > tr > th, .table > tbody > tr > td, 
+.table > tfoot > tr > th, .table > tfoot > tr > td{
+    vertical-align: middle;
+}
+.info-icon-tooltip {
+    font-size: 14px;
+    vertical-align: middle;
+}
+p, .txt-std{
+    font-size: 11px;
+}
+.tooltip{
+    font-size: 11px;
+}
+.dropdown-menu{
+    font-size: 11px;
+}
+.btn-sm, .btn-group-sm > .btn{
+    font-size: 11px;
+}
+.modal-dialog .modal-content .modal-header .close {
+    top: 11px;   
+}
+.selectize-control .selectize-input {
+    min-height: 30px;
+    padding: 4px 12px;
+}
+.progreessHighlighter{
+    font-size: 11px;
+}
+.treeControl{
+    font-size: 11px;
+}
+/*Global Font Size change request*/
+
+/*disable checkbox position*/ 
+div.checkbox input[type="checkbox"] {
+    margin-left: 0px;   
+}
+div.checkbox input[type='checkbox'][disabled] + label {
+    cursor: not-allowed;
+}
+div.checkbox input[type='checkbox'][disabled] + label span {
+    cursor: pointer;
+}
+
+/*disable checkbox position*/ 
+.input-info{
+    padding-top:0;
+}
+table.feeID_PropTable tbody tr:nth-child(1) td{
+    padding-top:7px;
+}
+
+/*updated Column width*/
+.width20{
+    width: 20px !important;
+}
+.width30{
+    width: 30px !important;
+}
+.width80{
+    width: 80px !important;
+}
+.width140{
+    width: 140px !important;
+}
+.width130{
+    width: 130px !important;
+}
+.width160{
+    width: 160px !important;
+}
+.width200{
+    width: 200px !important;
+}
+
+/*updated Column width*/
+
+
+/*Updated Structure Fee Item tab*/
+
+.sorting_asc a:after,.sorting_desc a:after
+{
+	margin-top:0!important;
+}
+

@@ -1,0 +1,270 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>User Administration&mdash;Manage Institution</title>
+<!--Created 2/4/19   K. Holland-->
+<link href='/common/css/main.css' rel="styleSheet" type="text/css">
+</head>
+
+<BODY>
+<strong>Institution</strong>
+<p>These pages allow you to establish and view the following: </p>
+<p>
+<div style="margin-left:25px"><strong>Client Institution ID</strong>&mdash;Create primary logos and identify whether they use IP Whitelisting.<br>
+<strong>Web Services Digital Certificate ID</strong>&mdash;Create digital certificate IDs for Web Service messages and add AppTokens for CardValet.
+</p></div>
+<p>
+Click the following links for more information.
+<p>
+
+<A HREF="#anchor1a">Enter Institution</A>
+<br>
+<div style="margin-left:25px">
+<p><A HREF="#anchor1b">Client Institution ID radio button</A>
+	  <br>
+	  <A HREF="#anchor1c">Institution ID</A>
+	  	  <br>
+	  <A HREF="#anchor1d">Web Service Digital Certificate ID radio button</A>
+	  	  	  <br>
+	  <A HREF="#anchor1e">Digital Certificate ID</A>
+</p>
+</div>
+	<p>
+    
+<A HREF="#anchor2a">Buttons</A>
+<p>
+When Client Institution ID radio button is selected: 
+<div style="margin-left:25px">
+<A HREF="#anchor2b">View</A>
+  <br>
+  <A HREF="#anchor2c">Add</A>
+  </p>
+  </div>
+  
+When Web Service Digital Certificate ID radio button is selected: 
+  <div style="margin-left:25px">
+  <A HREF="#anchor2d">View</A>
+  <br>
+  <A HREF="#anchor2e">Add</A>
+  <br>
+    <A HREF="#anchor2f">Delete</A>
+  <br>
+      <A HREF="#anchor2g">Add CardValet</A>
+  <br>
+</div>
+<br>
+
+<A HREF="#anchor3a">Results</A>
+<br>
+<div style="margin-left:25px">
+<p><A HREF="#anchor3b">Institution ID</A>
+	  <br>
+	  <A HREF="#anchor3c">Soft Token</A>
+	  <br>
+	  <A HREF="#anchor3d">IP Whitelisting</A>
+	  <br>
+	  <A HREF="#anchor3e">Update button</A>
+	  <br>
+	  <A HREF="#anchor3f">Delete button</A>
+<br/>
+</p>
+</div>
+	<p>
+<A HREF="#anchor4a">CardValet App Token</A>
+<br>
+<div style="margin-left:25px">
+      <p>
+	  <A HREF="#anchor4b">Add AppToken</A>
+	  <br>
+	  <A HREF="#anchor4c">AppToken Display Name</A>
+	  <br>
+	  <A HREF="#anchor4d">AppToken UserName</A>
+	  <br>
+	  <A HREF="#anchor4e">AppToken Password</A>
+	  <br>
+	  <A HREF="#anchor4f">Re-Enter Password</A>
+	  <br>
+	  <A HREF="#anchor4g">Assign Credentials button</A>
+	  	  <br>
+	  <A HREF="#anchor4h">Delete button</A>
+<br/>
+</p>
+</div>
+
+<A NAME="anchor1a"><strong>Enter Information</strong></A>
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1b">Client Institution ID radio button</A>
+		</TD>
+		<TD valign="top">Select to View/Update or Add Client Institution IDs.</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1c">Institution ID</A>
+		</TD>
+		<TD valign="top">Visible when Client Institution ID radio button is selected. 
+		<br>Enter a new or existing client Logo.</TD>
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1d">Web Service Digital Certificate ID radio button</A>
+		</TD>
+		<TD valign="top">ISelect to view, add, or delete a Digital Certificate for Web Service messages or to add an AppToken for CardValet.</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1e">Digital Certificate ID radio button</A>
+		</TD>
+		<TD valign="top">Visible when Web Service Digital Certificate ID radio button is selected. 
+        <br>Enter a new or existing Digital Certificate ID.</TD>
+	</TR>
+</table>
+<A HREF="#top">Back to Top</A></p>
+<P>
+  
+  <A NAME="anchor2a"><strong>Buttons</strong></A>
+  <p><strong>When Client ID radio button is selected:</strong>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+  <TR>
+ 	</TR>
+		  <TD valign="top" width="25%">
+		    <p><A NAME="anchor2b"></A>View</p></TD>
+		<TD valign="top">When selected, displays the Results section for the selected institution which includes the Institution ID value, Soft Token Yes/No drop-down and the IP Whitelisting Yes/No drop-down. </TD>
+    </TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2c"></A>Add</TD>
+		<TD valign="top"><p>When selected, adds the Logo entered, displays the success message <i>Institution has been added</i>, and the Results values for the selected institution which includes the Institution ID field, Soft Token Yes/No drop-down, and the IP Whitelisting Yes/No drop-down.</TD>
+</table>
+  <p><strong>When Web Service Digital Certificate ID radio button is selected:</strong>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+  <TR>
+ 	</TR>
+		  <TD valign="top" width="25%">
+		    <p><A NAME="anchor2d"></A>View</p></TD>
+		<TD valign="top">When selected, displays the CardValet AppToken for the Digital Certificate ID entered. See CardValet AppToken for more information. 
+		<p>If no AppToken is associated with the Digital Certificate entered, the following message will display: <i>Digital Certificate ID retrieved successfully</i>. No AppToken is associated with Digital Certificate.</p></TD>
+    </TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2e"></A>Add</TD>
+		<TD valign="top"><p>If selected, the entered Digital Certificate ID is added to LDAP and the following message displays: Digital Certification added successfully.  
+		<p>If the Digital Certificate already exists the following message displays: <i>Digital Certificate retrieved successfully.</i></p>
+		</TD>
+    </TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2f"></A>Delete</TD>
+		<TD valign="top"><p>If selected, the entered Digital Certificate ID is added to LDAP and the following message displays: Digital Certification added successfully.  
+		<p>If the Digital Certificate already exists the following message displays: <i>Digital Certificate retrieved successfully.</i></p>
+		</TD>
+    </TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2g"></A>Add CardValet</TD>
+		<TD valign="top"><p>If selected, the entered Digital Certificate ID is added to LDAP and the following message displays: Digital Certification added successfully.  
+		<p>If the Digital Certificate already exists the following message displays: <i>Digital Certificate retrieved successfully.</i></p>
+		</TD>
+</table>
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor3a"><strong>Results</strong></A>
+<p><strong>When Client ID radio button is selected:</strong></p>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3b">Institution ID</A>
+		</TD>
+		<TD valign="top">View only field, redisplays Logo entered. </TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3c">Soft Token</A>
+		</TD>
+		<TD valign="top">Yes/No drop-down. Not currently supported. Will control the ability for an institution to add soft tokens. 
+		<p>This field should always be set to <strong>No</strong>.</p>
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3d">IP Whitelisting</A>
+		</TD>
+		<TD valign="top">Yes/No drop-down. Controls the display of the IP Whitelisting tab in User Administration to external administrators. 
+		<div style="margin-left:25px">
+		<p><strong>Yes</strong> IP Whitelisting tab will display for all client users who have access to User Administration.
+		<br><strong>No</strong> IP Whitelisting tab will not display for the client's users.
+		</div>
+		<p><strong>Note:</strong> The IP Whitelisting tab will always display for Internal users. </p>
+		</TD>
+			<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3d">Updated button</A>
+		</TD>
+		<TD valign="top">When clicked, will apply any changes made to the page and display success message: <i>The institution has been updated.</i>
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3e">Delete button</A>
+		</TD>
+		<TD valign="top">When clicked, a confirmation pop up box displays. Select <b>OK</b> to delete. The following success message displays: <i>Institution ID deleted successfully.</i>
+	</TR>
+	</TR>
+</table>
+<P><A HREF="#top">Back to Top</A>
+
+<P>
+
+<A NAME="anchor4a"><strong>CardValet AppToken</strong></A>
+<br>
+This section displays when the entered Digital Certificate ID is associated with an AppToken
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4b">Add AppToken checkbox</A>
+		</TD>
+		<TD valign="top">When <b>not</b> checked, the existing AppToken UserName and Password can be modified. 
+ 		<p>When checked, credentials for the new AppToken can be entered.</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4c">AppToken Display Name</A>
+		</TD>
+		<TD valign="top">When the Add AppToken checkbox is <b>not</b> checked, this drop down menu displays all available AppToken mappings. 
+		<p>When the Add AppToken checkbox is checked, a selection may be made from the list.
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4d">AppToken UserName</A>
+		</TD>
+		<TD valign="top">This field is read-only and will display the selected AppToken's username.
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4e">AppToken Password</A>
+		</TD>
+		<TD valign="top">When the Add AppToken checkbox is <b>not</b> checked, the existing password can be edited. 
+		<p><strong>Note:</strong> Password cannot be less than 8 characters. 
+		<p>When the Add AppToken checkbox is checked, enter the desired password for the new AppToken.
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4f">Re-Enter Password</A>
+		</TD>
+		<TD valign="top">Re-enter the desired password.
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4g">Assign Credentials</A>
+		</TD>
+		<TD valign="top">Assigns the entered credentials, UserName and Password, to the Digital Certificate.
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor4h">Delete</A>
+		</TD>
+		<TD valign="top">If selected, deletes the Digital Certificate ID entered. A confirmation message will display. Select <b>OK</b> to delete.
+	</TR>
+	</TD>
+</table>
+<P><A HREF="#top">Back to Top</A>
+</BODY>
+</HTML>

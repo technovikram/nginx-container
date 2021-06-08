@@ -1,0 +1,39 @@
+#ui-datepicker-div {display: none;}
+td.details-control {
+    background: url('/common/images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('/common/images/details_close.png') no-repeat center center;
+}
+
+#Sec_useraccessrpt_tblResults_length {
+	display : none;
+}
+#cnsprintblock{position:relative;top:-5px;}
+#Sec_useraccessrpt_tblResults_filter{float:left;padding-top:3px}
+
+div#tbl-container-access {
+width: 950px;
+/*height:360px;*/
+overflow-x: auto;
+padding-bottom : 20px;
+}
+
+thead#tblhead-access th {
+text-align:center;
+background-color: #333366;
+color: white;
+border-right: 1px solid silver;
+position: relative;
+top : expression(document.getElementById("tbl-container-access").scrollTop-2);
+cursor: default;
+z-index: 20;
+white-space: nowrap;
+}
+
+#Sec_useraccessrpt_tblResults_paginate{float:left;padding-top:3px;margin-left:-15em;}
+.dataTables_wrapper .dataTables_info{
+	padding-top : 3em;
+}
+

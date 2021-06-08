@@ -1,0 +1,228 @@
+﻿<HTML>
+<HEAD>
+<title>User Administration&#151;Reports</title>
+<!--Modified July 2013 Anne Ramsey-->
+<link href='/common/css/main.css' rel="styleSheet" type="text/css">
+</head>
+
+<BODY>
+<strong>User Administration&#151;Add/Manage CardValet Configuration</strong>
+<p>
+
+This page allows you to assign a user id to a Financial Institutions CardValet settings. It will only appear when the Security User selects the Web Services - Card Control RWS application. 
+<p>
+Click the following links for more information:
+<p>
+<A HREF="#anchor1a">Key Information</A>
+<br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor1b">First Name</A>
+	<br>
+	<A HREF="#anchor1c">Last Name</A>
+	<br>
+	<a href="#anchor1d">Institution ID</a>
+	</div>
+<p>
+
+<A HREF="#anchor2a">CardValet</A>
+<br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor2b">Assigned FI Token</A>
+	<br>
+	<A HREF="#anchor2c">AppToken Display Name</A>
+	<br>
+	<a href="#anchor2d">Create WalletApp User</a>
+	<br>
+	<a href="#anchor2e">User ID</a>
+	<br>
+	<a href="#anchor2f">Password</a>
+	<br>
+	<a href="#anchor2g">Re-Enter Password</a>
+	<br>
+	<a href="#anchor2h">Client Search Map</a>
+	</div>
+	<p>
+	
+<A HREF="#anchor5a">Client Search Map</A><br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor5b">Primary Client ID</A>
+	<br>
+	<A HREF="#anchor5c">Search Client ID(s)</A>
+		<br>
+	<A HREF="#anchor5d">Edit</A>
+	</div>
+	<p>
+
+<A HREF="#anchor3a">Buttons</A><br>
+	<div style="margin-left:25px">
+	<A HREF="#anchor3b">Back</A>
+	<br>
+	<A HREF="#anchor3c">Continue</A>
+		<br>
+	<A HREF="#anchor3d">Cancel</A>
+	</div>
+	<p>
+
+<A NAME="anchor1a"><strong>Key Information</strong></A>
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1b">First Name</A>
+		</TD>
+		<TD valign="top">
+		First name of the user whose record is being created.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1c">Last Name</A>
+		</TD>
+		<TD valign="top">
+		  Last name of the user whose record is being created.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor1d">Institution ID</A>
+		</TD>
+		<TD valign="top">
+		Identifier assigned by Card Services for the selected institution.
+		</TD>
+	</TR>
+	</table>
+
+
+<A HREF="#top">Back to Top</A>
+<P>
+
+<A NAME="anchor2a"><strong>CardValet</strong></A>
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2b">Assigned FI Token</A>
+		</TD>
+		<TD valign="top">
+		Drop down list of available FI Tokens from Ondot Database.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2c">AppToken Display Name</A>
+		</TD>
+		<TD valign="top">
+		Drop down list of available AppToken which were mapped on the Manage Institution page and assigned to the Digital Certificate ID.
+		</TD>
+	</TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2d">Create WalletApp User</A>
+		</TD>
+		<TD valign="top">
+		When checked, credentials for a new WalletApp User can be entered.
+		<p>
+		When <b>not</b> checked, a new user will not be created. Field will not appear in Manage User page.   
+		</TD>
+	</TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor2e">User ID</A>
+		</TD>
+		<TD valign="top">
+		Identifier assigned by Card Services for the selected user displays when the Add WalletApp User checkbox is checked. Format should be LOGO_WA.
+		<p>
+		Field is read-only. 
+		</TD>
+	</TR>
+
+		<TD valign="top" width="25%">
+		<A NAME="anchor2f">Password</A>
+		</TD>
+		<TD valign="top">
+		Enter the desired password for the new AppToken.
+		<p><strong>Note</strong>: Password cannot be less than 8 characters.
+		<p>
+		Field cannot be edited from this screen after UserID and password have been added. Password must be changed from the Manage User page.
+		</TD>
+	</TR>
+
+		<TD valign="top" width="25%">
+		<A NAME="anchor2g">Re-Enter Password</A>
+		</TD>
+		<TD valign="top">
+		Re-enter the desired password.
+		</TD>
+</table>
+
+<A HREF="#top">Back to Top</A>
+<P>
+<A NAME="anchor5a"><strong>Client Search Map</strong></A>
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5b">Primary Client ID column</A>
+		</TD>
+		<TD valign="top">
+		Displays the primary client ID.  This section is used when a Financial Institution has more than one logo and allows a card search across those multiple logos. 
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5c">Search Client ID(s) column</A>
+		</TD>
+		<TD valign="top">
+		Displays the client ID associated with the primary client ID. 
+		<p>
+		Multiple Client IDs are separated by a comma. 
+		</TD>
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor5d">Edit</A>
+		</TD>
+		<TD valign="top">
+		Select to modify the Search Client ID associated with the Primary Client ID. 
+		<p>
+		When selected, a dialog box displays showing all available Client IDs. From here you can move any desired Client IDs to the Search Client IDs column. 
+		Select <b>Apply</b> to save changes, or <b>Cancel</b> to close the dialog box. 
+		</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A><P>
+
+<A NAME="anchor3a"><strong>Buttons</strong></A>
+<br>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3b">Back</A>
+		</TD>
+		<TD valign="top">
+		Identifier assigned by Card Services for the selected institution.
+		</TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3c">Continue</A>
+		</TD>
+		<TD valign="top">
+		Temporarily stores the data entered on this page for the new user's security record and takes you to the next page. 
+		</TD>
+	</TR>
+		<TR>
+		<TD valign="top" width="25%">
+		<A NAME="anchor3d">Cancel</A>
+		</TD>
+		<TD valign="top">
+		Discontinues the add CardValet process and returns you to the Manage Institution page. 
+		<p>
+		If selected, a confirmation message will display. Select <b>OK</b> to cancel.
+		</TD>
+	</TR>
+</table>
+
+<A HREF="#top">Back to Top</A><P>
+
+</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+'use strict';(function(a){"function"===typeof define&&define.amd?define(["jquery"],a):a(jQuery)})(function(a){a.ui=a.ui||{};return a.ui.version="1.12.1"});

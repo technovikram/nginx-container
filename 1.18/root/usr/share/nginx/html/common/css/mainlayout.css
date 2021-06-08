@@ -1,0 +1,41 @@
+/* Common */
+#overlay-back { 
+    position   : absolute; 
+    top        : 0; 
+    left       : 0; 
+    width      : 100%; 
+    height     : 100%; 
+    background : #000; 
+    opacity    : 0.6; 
+    filter     : alpha(opacity=60); 
+    z-index    : 5;
+    display    : none;
+} 
+ 
+#overlay { 
+    position : absolute; 
+    top      : 0; 
+    left     : 0; 
+    width    : 100%; 
+    height   : 100%; 
+    z-index  : 10;
+    display  : none;
+} 
+#overlay img{
+                position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+span.required {
+	color: red;
+	font: 14px Arial bold, Helvetica, Sans-Serif;
+	padding-left:2px;
+}
+
+.titlesection { padding: 10px 20px 0px 20px; overflow: hidden;}
+.helpImage{width: 15px;height: 15px;float: right;margin: 10px 5px 0 0;cursor: pointer;}
+.titleheading{font-size:9px; color: #333; display:inline-block;}
